@@ -37,23 +37,23 @@
 }
 
 .info-button {
-    @include base-button(var(--font-secondary), --text-size-m, --white, --info, --info);
+    @include base-button(--font-secondary, --text-size-m, --white, --info, --info);
 }
 
 .warning-button {
-    @include base-button(var(--font-secondary), --text-size-m, --white, --warning, --warning);
+    @include base-button(--font-secondary, --text-size-m, --white, --warning, --warning);
 }
 
 .danger-button {
-    @include base-button(var(--font-secondary), --text-size-m, --white, --danger, --danger);
+    @include base-button(--font-secondary, --text-size-m, --white, --danger, --danger);
 }
 
 .light-button {
-    @include base-button(var(--font-secondary), --text-size-m, --dark, --light, --light);
+    @include base-button(--font-secondary, --text-size-m, --dark, --light, --light);
 }
 
 .dark-button {
-    @include base-button(var(--font-secondary), --text-size-m, --light, --dark, --dark);
+    @include base-button(--font-secondary, --text-size-m, --light, --dark, --dark);
 }
 
 .success-outline-button {

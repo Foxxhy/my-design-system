@@ -9,19 +9,19 @@ const Button = () => {
             <div className="horizontal-separator" style={{ width: '500px'}}/>
             <div className="button-container">
                 <button className="success-button">Success button</button>
-                {/* <button className="info-button">Info button</button>
+                <button className="info-button">Info button</button>
                 <button className="warning-button">Warning button</button>
                 <button className="danger-button">Danger button</button>
                 <button className="light-button">Light button</button>
-                <button className="dark-button">Dark button</button> */}
+                <button className="dark-button">Dark button</button>
             </div>
             <div className="button-container">
                 <button className="success-outline-button">Success button</button>
-                {/* <button className="info-outline-button">Info button</button>
+                <button className="info-outline-button">Info button</button>
                 <button className="warning-outline-button">Warning button</button>
                 <button className="danger-outline-button">Danger button</button>
                 <button className="light-outline-button">Light button</button>
-                <button className="dark-outline-button">Dark button</button> */}
+                <button className="dark-outline-button">Dark button</button>
             </div>
             {/* <h2 className="sub-section-title">
                 Default Button Hovered and Focused

@@ -1,4 +1,3 @@
-import React from "react"
 import './card.css';
 
 const Card = () => {
@@ -11,10 +10,10 @@ const Card = () => {
             </h2>
             <div className="horizontal-separator" style={{ width: '500px'}} />
             <div className="button-container">
-                <div className="dark-card" style={{ width: '400px' }} >
+                <div className="dark-card radius-card-8" style={{ width: '400px' }} >
                     {text}
                 </div>
-                <div className="dot-dark-card" style={{ width: '400px' }} >
+                <div className="dot-dark-card radius-card-8" style={{ width: '400px' }} >
                     {text}
                 </div>
             </div>

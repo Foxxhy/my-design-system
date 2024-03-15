@@ -18,7 +18,7 @@ const Modal = () => {
                 </div>
             </div>
             <div className="button-container">
-                <button className="success-outline-button" onClick={() => setDialog(true)}>Success button</button>
+                <button className="success-outline-button" onClick={() => setDialog(true)}>Open dialog</button>
                 <div className={dialog ? 'show-dialog' : 'hide-dialog'} >
                     Coucou
                     <button className="info-button" onClick={() => setDialog(false)} >fermer</button>
