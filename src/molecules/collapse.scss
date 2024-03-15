@@ -1,0 +1,25 @@
+.header-collapse {
+    width: 100%;
+    text-align: left;
+
+    background-color: var(--white);
+    padding: var(--space-16);
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hidden-body-collapse {
+    display: none;
+    width: 100%;
+    padding: var(--space-16);
+}
+
+.show-body-collapse {
+    display: block;
+    width: 100%;
+
+    background-color: var(--white);
+    padding: var(--space-16);
+}

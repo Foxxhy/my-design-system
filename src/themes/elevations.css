@@ -1,0 +1,9 @@
+:root {
+    --elevation-default: 0;
+    --elevation-cover: 10;
+    --elevation-side: 20;
+    --elevation-modal: 25;
+    --elevation-dialog: 30;
+    --elevation-toast: 35;
+  }
+  

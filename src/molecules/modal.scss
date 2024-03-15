@@ -1,0 +1,37 @@
+@mixin base-modal($width, $height, $z-index) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $width;
+    height: $height;
+    background-color: var(--white);
+    border-radius: var(--space-8);
+    padding: var(--space-16);
+    z-index: $z-index;
+
+    @media only screen and (max-width: var(--breakpoint-m)) {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@mixin base-hide-modal {
+    display: none;
+}
+
+.show-modal {
+    @include base-modal(600px, 500px, var(--elevation-modal));
+}
+
+.hide-modal {
+    @include base-hide-modal();
+}
+
+.show-dialog {
+    @include base-modal(500px, 350px, var(--elevation-dialog));
+}
+
+.hide-dialog {
+    @include base-hide-modal();
+}

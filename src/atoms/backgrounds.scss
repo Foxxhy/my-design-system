@@ -1,0 +1,91 @@
+@mixin base-background-color($color) {
+    background-color: var(--#{$color});
+}
+
+.blue-background {
+    @include base-background-color(blue);
+}
+
+.indigo-background {
+    @include base-background-color(indigo);
+}
+
+.purple-background {
+    @include base-background-color(purple);
+}
+
+.pink-background {
+    @include base-background-color(pink);
+}
+
+.red-background {
+    @include base-background-color(red);
+}
+
+.orange-background {
+    @include base-background-color(orange);
+}
+
+.yellow-background {
+    @include base-background-color(yellow);
+}
+
+.green-background {
+    @include base-background-color(green);
+}
+
+.teal-background {
+    @include base-background-color(teal);
+}
+
+.cyan-background {
+    @include base-background-color(cyan);
+}
+
+.white-background {
+    @include base-background-color(white);
+}
+
+.gray-background {
+    @include base-background-color(gray);
+}
+
+.gray-dark-background {
+    @include base-background-color(gray-dark);
+}
+
+.primary-background {
+    @include base-background-color(primary);
+}
+
+.secondary-background {
+    @include base-background-color(secondary);
+}
+
+.success-background {
+    @include base-background-color(success);
+}
+
+.info-background {
+    @include base-background-color(info);
+}
+
+.warning-background {
+    @include base-background-color(warning);
+}
+
+.danger-background {
+    @include base-background-color(danger);
+}
+
+.light-background {
+    @include base-background-color(light);
+}
+
+.dark-background {
+    @include base-background-color(dark);
+}
+
+.transparent-background {
+    @include base-background-color(transparent);
+}

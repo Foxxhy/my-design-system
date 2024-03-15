@@ -1,0 +1,40 @@
+@mixin base-badge($background-color, $color) {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: var(--text-size-s);
+    font-weight: var(--weight-bold);
+
+    color: $color;
+    background-color: $background-color;
+
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--space-4);
+}
+
+.dark-badge {
+    @include base-badge(var(--transparent), var(--dark));
+}
+
+.success-badge {
+    @include base-badge(var(--success), var(--white));
+}
+
+.info-badge {
+    @include base-badge(var(--info), var(--white));
+}
+
+.warning-badge {
+    @include base-badge(var(--warning), var(--dark));
+}
+
+.danger-badge {
+    @include base-badge(var(--danger), var(--white));
+}
+
+.primary-badge {
+    @include base-badge(var(--primary), var(--white));
+}
+
+.secondary-badge {
+    @include base-badge(var(--secondary), var(--white));
+}

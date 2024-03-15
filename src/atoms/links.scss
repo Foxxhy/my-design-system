@@ -1,0 +1,108 @@
+@mixin link-styles($color, $underline: false, $animated: false) {
+    color: var(--#{$color});
+    @if $underline {
+      text-decoration: underline;
+    }
+    @if $animated {
+      &:hover, &:focus {
+        transition: color var(--animation-m);
+      }
+    }
+  }
+  
+  .success-link {
+    @include link-styles(success);
+  }
+  
+  .success-underline-link {
+    @include link-styles(success, true);
+  }
+  
+  .success-link-animated {
+    @include link-styles(success, false, true);
+  }
+  
+  .success-underline-link-animated {
+    @include link-styles(success, true, true);
+  }
+  
+  .info-link {
+    @include link-styles(info);
+  }
+  
+  .info-underline-link {
+    @include link-styles(info, true);
+  }
+  
+  .info-link-animated {
+    @include link-styles(info, false, true);
+  }
+  
+  .info-underline-link-animated {
+    @include link-styles(info, true, true);
+  }
+  
+  .warning-link {
+    @include link-styles(warning);
+  }
+  
+  .warning-underline-link {
+    @include link-styles(warning, true);
+  }
+  
+  .warning-link-animated {
+    @include link-styles(warning, false, true);
+  }
+  
+  .warning-underline-link-animated {
+    @include link-styles(warning, true, true);
+  }
+  
+  .danger-link {
+    @include link-styles(danger);
+  }
+  
+  .danger-underline-link {
+    @include link-styles(danger, true);
+  }
+  
+  .danger-link-animated {
+    @include link-styles(danger, false, true);
+  }
+  
+  .danger-underline-link-animated {
+    @include link-styles(danger, true, true);
+  }
+  
+  .light-link {
+    @include link-styles(light);
+  }
+  
+  .light-underline-link {
+    @include link-styles(light, true);
+  }
+  
+  .light-link-animated {
+    @include link-styles(light, false, true);
+  }
+  
+  .light-underline-link-animated {
+    @include link-styles(light, true, true);
+  }
+  
+  .dark-link {
+    @include link-styles(dark);
+  }
+  
+  .dark-underline-link {
+    @include link-styles(dark, true);
+  }
+  
+  .dark-link-animated {
+    @include link-styles(dark, false, true);
+  }
+  
+  .dark-underline-link-animated {
+    @include link-styles(dark, true, true);
+  }
+  

@@ -1,0 +1,81 @@
+.card {
+    padding: var(--space-16);
+}
+
+.success-card {
+    @extend .card;
+    border: 1px solid var(--success);
+}
+
+.info-card {
+    @extend .card;
+    border: 1px solid var(--info);
+}
+
+.warning-card {
+    @extend .card;
+    border: 1px solid var(--warning);
+}
+
+.danger-card {
+    @extend .card;
+    border: 1px solid var(--danger);
+}
+
+.dark-card {
+    @extend .card;
+    border: 1px solid var(--dark);
+}
+
+.dot-card {
+    border-style: dashed;
+}
+
+.dot-success-card {
+    @extend .success-card;
+    @extend .dot-card;
+}
+
+.dot-info-card {
+    @extend .info-card;
+    @extend .dot-card;
+}
+
+.dot-warning-card {
+    @extend .warning-card;
+    @extend .dot-card;
+}
+
+.dot-danger-card {
+    @extend .danger-card;
+    @extend .dot-card;
+}
+
+.dot-dark-card {
+    @extend .dark-card;
+    @extend .dot-card;
+}
+
+.radius-card-6 {
+    border-radius: var(--space-6);
+}
+
+.radius-card-8 {
+    border-radius: var(--space-8);
+}
+
+.radius-card-10 {
+    border-radius: var(--space-10);
+}
+
+.radius-card-12 {
+    border-radius: var(--space-12);
+}
+
+.radius-card-14 {
+    border-radius: var(--space-14);
+}
+
+.radius-card-16 {
+    border-radius: var(--space-16);
+}

@@ -1,0 +1,15 @@
+@mixin base-separator($width, $height, $margin) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    background-color: var(--dark);
+  }
+  
+  .vertical-separator {
+    @include base-separator(1px, 100%, 0 var(--space-16));
+  }
+  
+  .horizontal-separator {
+    @include base-separator(100%, 1px, var(--space-16) 0);
+  }
+  

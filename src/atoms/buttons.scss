@@ -1,0 +1,112 @@
+@mixin base-button($font-family, $font-size, $color, $background-color, $border-color) {
+    font-family: var($font-family);
+    font-size: var($font-size);
+    color: var($color);
+
+    background-color: var($background-color);
+    border: solid 1px var($border-color);
+    padding: var(--space-6) var(--space-12);
+    border-radius: var(--space-6);
+
+    cursor: pointer;
+}
+
+@mixin base-outline-button($color) {
+    font-family: var(--font-secondary);
+    font-size: var(--size-l);
+    color: var(#{$color});
+
+    background-color: var(--white);
+    border: 1px solid var(#{$color});
+    padding: var(--space-6) var(--space-12);
+    border-radius: var(--space-6);
+
+    cursor: pointer;
+}
+
+@mixin base-interactive-button($color) {
+    &:hover, &:focus {
+        opacity: 0.85;
+        color: var(--white);
+        transition: opacity var(--animation-m);
+    }
+}
+
+.success-button {
+    @include base-button(--font-secondary, --text-size-m, --white, --success, --success);
+}
+
+.info-button {
+    @include base-button(var(--font-secondary), --text-size-m, --white, --info, --info);
+}
+
+.warning-button {
+    @include base-button(var(--font-secondary), --text-size-m, --white, --warning, --warning);
+}
+
+.danger-button {
+    @include base-button(var(--font-secondary), --text-size-m, --white, --danger, --danger);
+}
+
+.light-button {
+    @include base-button(var(--font-secondary), --text-size-m, --dark, --light, --light);
+}
+
+.dark-button {
+    @include base-button(var(--font-secondary), --text-size-m, --light, --dark, --dark);
+}
+
+.success-outline-button {
+    @include base-outline-button(--success);
+}
+
+.info-outline-button {
+    @include base-outline-button(--info);
+}
+
+.warning-outline-button {
+    @include base-outline-button(--warning);
+}
+
+.danger-outline-button {
+    @include base-outline-button(--danger);
+}
+
+.light-outline-button {
+    @include base-outline-button(--dark);
+}
+
+.dark-outline-button {
+    @include base-outline-button(--dark);
+}
+
+.success-button-interactive {
+    @include base-interactive-button(--success);
+}
+
+.info-button-interactive {
+    @include base-interactive-button(--info);
+}
+
+.warning-button-interactive {
+    @include base-interactive-button(--warning);
+}
+
+.danger-button-interactive {
+    @include base-interactive-button(--danger);
+}
+
+.light-button-interactive {
+    @include base-interactive-button(--light);
+}
+
+.dark-button-interactive {
+    @include base-interactive-button(--dark);
+}
+
+.outline-button-interactive {
+	&:hover, &:focus {
+		border-color: transparent;
+        transition: border-color var(--animation-m);
+    }
+}
