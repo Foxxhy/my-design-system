@@ -79,3 +79,18 @@
 .radius-card-16 {
     border-radius: var(--space-16);
 }
+
+.shadow-card-s {
+    @extend .card;
+    @extend .shadow-s;
+}
+
+.shadow-card-m {
+    @extend .card;
+    @extend .shadow-m;
+}
+
+.shadow-card-l {
+    @extend .card;
+    @extend .shadow-l;
+}

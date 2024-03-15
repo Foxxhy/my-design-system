@@ -8,20 +8,20 @@
     }
 }
 
-.primary-text {
-    font-family: var(--font-primary);
-}
-
-.secondary-text {
-    font-family: var(--font-secondary);
-}
-
 .text {
     @include base-text(--font-primary, --text-size-m, --primary, null);
 }
 
 .label-text {
     @include base-text(--font-secondary, --text-size-m, --secondary, --weight-bold);
+}
+
+.primary-text {
+    font-family: var(--font-primary);
+}
+
+.secondary-text {
+    font-family: var(--font-secondary);
 }
 
 .weight-text-thin {

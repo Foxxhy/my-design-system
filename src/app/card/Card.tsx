@@ -16,6 +16,9 @@ const Card = () => {
                 <div className="dot-dark-card radius-card-8" style={{ width: '400px' }} >
                     {text}
                 </div>
+                <div className="shadow-card-m radius-card-8" style={{ width: '400px' }} >
+                    {text}
+                </div>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-@mixin base-modal($width, $height, $z-index) {
+@mixin base-modal($width, $height, $z-index, $breakpoint) {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -9,10 +9,12 @@
     border-radius: var(--space-8);
     padding: var(--space-16);
     z-index: $z-index;
+}
 
-    @media only screen and (max-width: var(--breakpoint-m)) {
-        width: 90%;
-        height: 90%;
+@mixin base-modal-responsive($width, $height) {
+    @media screen and (max-width: 768px) {
+        width: $width;
+        height: $height;
     }
 }
 
@@ -21,15 +23,17 @@
 }
 
 .show-modal {
-    @include base-modal(600px, 500px, var(--elevation-modal));
+    @include base-modal(600px, 500px, var(--elevation-modal), var(--breakpoint-m));
+    @include base-modal-responsive(90%, 90%);
+}
+
+.show-dialog {
+    @include base-modal(500px, 350px, var(--elevation-dialog), var(--breakpoint-m));
+    @include base-modal-responsive(90%, 300px);
 }
 
 .hide-modal {
     @include base-hide-modal();
-}
-
-.show-dialog {
-    @include base-modal(500px, 350px, var(--elevation-dialog));
 }
 
 .hide-dialog {
