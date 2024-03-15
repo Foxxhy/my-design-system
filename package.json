@@ -1,7 +1,8 @@
 {
-  "name": "vite-project",
+  "name": "my-design-system",
   "private": true,
-  "version": "0.0.0",
+  "author": "Fr93562",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,5 +29,22 @@
     "sass": "^1.72.0",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
-  }
+  },
+  "description": "Ce document contient les directives et les conventions pour utiliser le Design System dans vos projets. Le Design System fournit une série de variables, de classes et de composants réutilisables pour garantir la cohérence visuelle et la facilité de développement.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fr93562/my-design-system.git"
+  },
+  "keywords": [
+    "design-system"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fr93562/my-design-system/issues"
+  },
+  "homepage": "https://github.com/Fr93562/my-design-system#readme"
 }
