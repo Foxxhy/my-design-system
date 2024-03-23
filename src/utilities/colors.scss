@@ -1,0 +1,95 @@
+@mixin base-color($color) {
+    color: var(--#{$color});
+}
+
+@mixin prefix-colors {
+    .#{$prefix}blue-color {
+        @include base-color(blue);
+    }
+
+    .#{$prefix}indigo-color {
+        @include base-color(indigo);
+    }
+
+    .#{$prefix}purple-color {
+        @include base-color(purple);
+    }
+
+    .#{$prefix}pink-color {
+        @include base-color(pink);
+    }
+
+    .#{$prefix}red-color {
+        @include base-color(red);
+    }
+
+    .#{$prefix}orange-color {
+        @include base-color(orange);
+    }
+
+    .#{$prefix}yellow-color {
+        @include base-color(yellow);
+    }
+
+    .#{$prefix}green-color {
+        @include base-color(green);
+    }
+
+    .#{$prefix}teal-color {
+        @include base-color(teal);
+    }
+
+    .#{$prefix}cyan-color {
+        @include base-color(cyan);
+    }
+
+    .#{$prefix}white-color {
+        @include base-color(white);
+    }
+
+    .#{$prefix}gray-color {
+        @include base-color(gray);
+    }
+
+    .#{$prefix}gray-dark-color {
+        @include base-color(gray-dark);
+    }
+
+    .#{$prefix}primary-color {
+        @include base-color(primary);
+    }
+
+    .#{$prefix}secondary-color {
+        @include base-color(secondary);
+    }
+
+    .#{$prefix}success-color {
+        @include base-color(success);
+    }
+
+    .#{$prefix}info-color {
+        @include base-color(info);
+    }
+
+    .#{$prefix}warning-color {
+        @include base-color(warning);
+    }
+
+    .#{$prefix}danger-color {
+        @include base-color(danger);
+    }
+
+    .#{$prefix}light-color {
+        @include base-color(light);
+    }
+
+    .#{$prefix}dark-color {
+        @include base-color(dark);
+    }
+
+    .#{$prefix}transparent-color {
+        @include base-color(transparent);
+    }
+}
+
+@include prefix-colors;

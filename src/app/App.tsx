@@ -1,4 +1,4 @@
-import Color from './color/Color';
+import ColorSection from './components/color/Color';
 import Title from './title/Title';
 import Badge from './badge/Button';
 import Typography from './typography/Typography';
@@ -13,7 +13,7 @@ import './app.css';
 const App = () => {
 	return (
 		<main className='main-container'>
-			<Color />
+			<ColorSection />
 			<Title />
 			<Typography/>
 			<Button />

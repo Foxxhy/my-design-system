@@ -1,0 +1,71 @@
+@mixin base-position($position-value) {
+    position: $position-value;
+}
+
+@mixin base-top($top-value) {
+    top: $top-value;
+}
+
+@mixin base-bottom($bottom-value) {
+    bottom: $bottom-value;
+}
+
+@mixin base-right($right-value) {
+    right: $right-value;
+}
+
+@mixin base-left($left-value) {
+    left: $left-value;
+}
+
+@mixin base-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin prefix-positions {
+    .#{$prefix}position-static {
+        @include base-position(static);
+    }
+
+    .#{$prefix}position-relative {
+        @include base-position(relative);
+    }
+
+    .#{$prefix}position-absolute {
+        @include base-position(absolute);
+    }
+
+    .#{$prefix}position-fixed {
+        @include base-position(fixed);
+    }
+
+    .#{$prefix}position-sticky {
+        @include base-position(sticky);
+    }
+
+    @for $i from 0 to 25 {
+        .#{$prefix}top-#{$i} {
+            @include base-top(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}bottom-#{$i} {
+            @include base-bottom(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}right-#{$i} {
+            @include base-right(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}left-#{$i} {
+            @include base-left(var(--space-#{$i * 2}));
+        }
+    }
+
+    .#{$prefix}center {
+        @include base-center;
+    }
+}
+
+@include prefix-positions;

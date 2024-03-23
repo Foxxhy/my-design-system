@@ -12,26 +12,31 @@
     color: var($color);
 }
 
-.main-title {
-    @include base-title(--text-size-xxl, --weight-bold, --primary);
+@mixin prefix-titles { 
+    .#{$prefix}main-title {
+        @include base-title(--text-size-xxl, --weight-bold, --primary);
+    }
+    
+    .#{$prefix}section-title {
+        @include base-title(--text-size-xl, --weight-bold, --primary);
+    }
+    
+    .#{$prefix}sub-section-title {
+        @include base-title(--text-size-l, --weight-bold, --primary);
+    }
+    
+    .#{$prefix}main-subtitle {
+        @include base-subtitle(--text-size-l, --weight-bold, --secondary);
+    }
+    
+    .#{$prefix}section-subtitle {
+        @include base-subtitle(--text-size-m, --weight-bold, --secondary);
+    }
+    
+    .#{$prefix}sub-section-subtitle {
+        @include base-subtitle(--text-size-m, --weight-normal, --secondary);
+    }
+    
 }
 
-.section-title {
-    @include base-title(--text-size-xl, --weight-bold, --primary);
-}
-
-.sub-section-title {
-    @include base-title(--text-size-l, --weight-bold, --primary);
-}
-
-.main-subtitle {
-    @include base-subtitle(--text-size-l, --weight-bold, --secondary);
-}
-
-.section-subtitle {
-    @include base-subtitle(--text-size-m, --weight-bold, --secondary);
-}
-
-.sub-section-subtitle {
-    @include base-subtitle(--text-size-m, --weight-normal, --secondary);
-}
+@include prefix-titles;

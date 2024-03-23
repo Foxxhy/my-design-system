@@ -1,0 +1,31 @@
+@mixin base-elevation($elevation) {
+    z-index: var(--#{$elevation});
+}
+
+@mixin prefix-elevations { 
+    .#{$prefix}elevation-default {
+        @include base-elevation(elevation-default);
+    }
+    
+    .#{$prefix}elevation-cover {
+        @include base-elevation(elevation-cover);
+    }
+    
+    .#{$prefix}elevation-side {
+        @include base-elevation(elevation-side);
+    }
+
+    .#{$prefix}elevation-modal {
+        @include base-elevation(elevation-modal);
+    }
+
+    .#{$prefix}elevation-dialog {
+        @include base-elevation(elevation-dialog);
+    }
+
+    .#{$prefix}elevation-toast {
+        @include base-elevation(elevation-toast);
+    }
+}
+
+@include prefix-elevations;

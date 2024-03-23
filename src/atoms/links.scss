@@ -1,108 +1,115 @@
-@mixin base-link($color, $underline: false, $animated: false) {
-    color: var(--#{$color});
-    @if $underline {
-      text-decoration: underline;
-    }
-    @if $animated {
-      &:hover, &:focus {
-        transition: color var(--animation-m);
-      }
-    }
-  }
-  
-  .success-link {
-    @include base-link(success);
-  }
-  
-  .success-underline-link {
-    @include base-link(success, true);
-  }
-  
-  .success-link-interactive {
-    @include base-link(success, false, true);
-  }
-  
-  .success-underline-link-interactive {
-    @include base-link(success, true, true);
-  }
-  
-  .info-link {
-    @include base-link(info);
-  }
-  
-  .info-underline-link {
-    @include base-link(info, true);
-  }
-  
-  .info-link-interactive {
-    @include base-link(info, false, true);
-  }
-  
-  .info-underline-link-interactive {
-    @include base-link(info, true, true);
-  }
-  
-  .warning-link {
-    @include base-link(warning);
-  }
-  
-  .warning-underline-link {
-    @include base-link(warning, true);
-  }
-  
-  .warning-link-interactive {
-    @include base-link(warning, false, true);
-  }
-  
-  .warning-underline-link-interactive {
-    @include base-link(warning, true, true);
-  }
-  
-  .danger-link {
-    @include base-link(danger);
-  }
-  
-  .danger-underline-link {
-    @include base-link(danger, true);
-  }
-  
-  .danger-link-interactive {
-    @include base-link(danger, false, true);
-  }
-  
-  .danger-underline-link-interactive {
-    @include base-link(danger, true, true);
-  }
-  
-  .light-link {
-    @include base-link(light);
-  }
-  
-  .light-underline-link {
-    @include base-link(light, true);
-  }
-  
-  .light-link-interactive {
-    @include base-link(light, false, true);
-  }
-  
-  .light-underline-link-interactive {
-    @include base-link(light, true, true);
-  }
-  
-  .dark-link {
-    @include base-link(dark);
-  }
-  
-  .dark-underline-link {
-    @include base-link(dark, true);
-  }
-  
-  .dark-link-interactive {
-    @include base-link(dark, false, true);
-  }
-  
-  .dark-underline-link-interactive {
-    @include base-link(dark, true, true);
-  }
-  
+@mixin base-link($color, $underline: false, $hover: false) {
+	color: var(--#{$color});
+
+	@if $underline {
+		@extend .#{$prefix}style-underline;
+	}
+
+	@if $hover {
+
+		&:hover,
+		&:focus {
+			transition: color var(--animation-m);
+		}
+	}
+}
+
+@mixin prefix-links {
+	.#{$prefix}success-link {
+		@include base-link(success);
+	}
+
+	.#{$prefix}info-link {
+		@include base-link(info);
+	}
+
+	.#{$prefix}warning-link {
+		@include base-link(warning);
+	}
+
+	.#{$prefix}danger-link {
+		@include base-link(danger);
+	}
+
+	.#{$prefix}light-link {
+		@include base-link(light);
+	}
+
+	.#{$prefix}dark-link {
+		@include base-link(dark);
+	}
+
+	.#{$prefix}success-underline-link {
+		@include base-link(success, true);
+	}
+
+	.#{$prefix}info-underline-link {
+		@include base-link(info, true);
+	}
+
+	.#{$prefix}warning-underline-link {
+		@include base-link(warning, true);
+	}
+
+	.#{$prefix}danger-underline-link {
+		@include base-link(danger, true);
+	}
+
+	.#{$prefix}light-underline-link {
+		@include base-link(light, true);
+	}
+
+	.#{$prefix}dark-underline-link {
+		@include base-link(dark, true);
+	}
+
+	.#{$prefix}success-link-hover {
+		@include base-link(success, false, true);
+	}
+
+	.#{$prefix}info-link-hover {
+		@include base-link(info, false, true);
+	}
+
+	.#{$prefix}warning-link-hover {
+		@include base-link(warning, false, true);
+	}
+
+	.#{$prefix}danger-link-hover {
+		@include base-link(danger, false, true);
+	}
+
+	.#{$prefix}dark-link-hover {
+		@include base-link(dark, false, true);
+	}
+
+	.#{$prefix}light-link-hover {
+		@include base-link(light, false, true);
+	}
+
+	.#{$prefix}success-underline-link-hover {
+		@include base-link(success, true, true);
+	}
+
+	.#{$prefix}info-underline-link-hover {
+		@include base-link(info, true, true);
+	}
+
+	.#{$prefix}warning-underline-link-hover {
+		@include base-link(warning, true, true);
+	}
+
+	.#{$prefix}danger-underline-link-hover {
+		@include base-link(danger, true, true);
+	}
+
+	.#{$prefix}light-underline-link-hover {
+		@include base-link(light, true, true);
+	}
+
+	.#{$prefix}dark-underline-link-hover {
+		@include base-link(dark, true, true);
+	}
+}
+
+@include prefix-links;

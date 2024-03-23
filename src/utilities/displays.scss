@@ -1,0 +1,88 @@
+@mixin base-display($display-value) {
+    display: $display-value;
+}
+@mixin base-flex($flex-value) {
+    flex: $flex-value;
+}
+
+@mixin base-flex-wrap($wrap-value) {
+    flex-wrap: $wrap-value;
+}
+
+@mixin base-flex-direction($direction-value) {
+    flex-direction: $direction-value;
+}
+
+@mixin base-align-items($align-value) {
+    align-items: $align-value;
+}
+
+@mixin base-flex-gap($gap-size) {
+    gap: $gap-size;
+}
+
+@mixin prefix-displays {
+    .#{$prefix}display-block {
+        @include base-display(block);
+    }
+
+    .#{$prefix}display-inline {
+        @include base-display(inline);
+    }
+
+    .#{$prefix}display-inline-block {
+        @include base-display(inline-block);
+    }
+
+    .#{$prefix}display-none {
+        @include base-display(none);
+    }
+
+    .#{$prefix}flex-row {
+        @include base-flex(row);
+    }
+
+    .#{$prefix}flex-column {
+        @include base-flex(column);
+    }
+
+    .#{$prefix}flex-center {
+        @include base-flex(center);
+    }
+
+    .#{$prefix}flex-wrap {
+        @include base-flex-wrap(wrap);
+    }
+
+    .#{$prefix}flex-no-wrap {
+        @include base-flex-wrap(no-wrap);
+    }
+
+    .#{$prefix}flex-row {
+        @include base-flex-direction(row);
+    }
+
+    .#{$prefix}flex-row-reverse {
+        @include base-flex-direction(row-reverse);
+    }
+
+    .#{$prefix}align-items-start {
+        @include base-align-items(flex-start);
+    }
+
+    .#{$prefix}align-items-center {
+        @include base-align-items(center);
+    }
+
+    .#{$prefix}align-items-end {
+        @include base-align-items(flex-end);
+    }
+
+    @for $i from 0 to 24 {
+        .#{$prefix}flex-gap-#{$i} {
+            @include base-flex-gap(var(--space-#{$i * 2}));
+        }
+    }
+}
+
+@include prefix-displays;

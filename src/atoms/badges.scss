@@ -11,30 +11,34 @@
     border-radius: var(--space-4);
 }
 
-.dark-badge {
-    @include base-badge(var(--transparent), var(--dark));
+@mixin prefix-badges {
+    .#{$prefix}dark-badge {
+        @include base-badge(var(--transparent), var(--dark));
+    }
+    
+    .#{$prefix}success-badge {
+        @include base-badge(var(--success), var(--white));
+    }
+    
+    .#{$prefix}info-badge {
+        @include base-badge(var(--info), var(--white));
+    }
+    
+    .#{$prefix}warning-badge {
+        @include base-badge(var(--warning), var(--dark));
+    }
+    
+    .#{$prefix}danger-badge {
+        @include base-badge(var(--danger), var(--white));
+    }
+    
+    .#{$prefix}primary-badge {
+        @include base-badge(var(--primary), var(--white));
+    }
+    
+    .#{$prefix}secondary-badge {
+        @include base-badge(var(--secondary), var(--white));
+    }
 }
 
-.success-badge {
-    @include base-badge(var(--success), var(--white));
-}
-
-.info-badge {
-    @include base-badge(var(--info), var(--white));
-}
-
-.warning-badge {
-    @include base-badge(var(--warning), var(--dark));
-}
-
-.danger-badge {
-    @include base-badge(var(--danger), var(--white));
-}
-
-.primary-badge {
-    @include base-badge(var(--primary), var(--white));
-}
-
-.secondary-badge {
-    @include base-badge(var(--secondary), var(--white));
-}
+@include prefix-badges;

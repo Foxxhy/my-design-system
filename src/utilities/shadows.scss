@@ -1,0 +1,19 @@
+@mixin base-shadow($shadow-size) {
+    box-shadow: var($shadow-size);
+}
+
+@mixin prefix-shadows { 
+    .#{$prefix}shadow-s {
+        @include base-shadow(--box-shadow-s);
+    }
+    
+    .#{$prefix}shadow-m {
+        @include base-shadow(--box-shadow-m);
+    }
+    
+    .#{$prefix}shadow-l {
+        @include base-shadow(--box-shadow-l);
+    }
+}
+
+@include prefix-shadows;

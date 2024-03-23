@@ -81,13 +81,16 @@
         font-style: italic;
     }
 
+    .#{$prefix}style-underline {
+        text-decoration: underline;
+    }
+
     .#{$prefix}style-through {
         text-decoration: line-through;
     }
 }
 
 @include prefix-texts;
-
 
 // .text {
 //     @include base-text(--font-primary, --text-size-m, --primary, null);

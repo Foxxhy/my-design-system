@@ -1,96 +1,100 @@
-.card {
-    padding: var(--space-16);
+@mixin prefix-cards {
+    .base-card {
+        padding: var(--space-16);
+    }
+    
+    .base-dot-card {
+        border-style: dashed;
+    }
+    
+    .#{$prefix}success-card {
+        @extend .#{$prefix}base-card;
+        border: 1px solid var(--success);
+    }
+    
+    .#{$prefix}info-card {
+        @extend .#{$prefix}base-card;
+        border: 1px solid var(--info);
+    }
+    
+    .#{$prefix}warning-card {
+        @extend .#{$prefix}base-card;
+        border: 1px solid var(--warning);
+    }
+    
+    .#{$prefix}danger-card {
+        @extend .#{$prefix}base-card;
+        border: 1px solid var(--danger);
+    }
+    
+    .#{$prefix}dark-card {
+        @extend .#{$prefix}base-card;
+        border: 1px solid var(--dark);
+    }
+    
+    .#{$prefix}success-dot-card {
+        @extend .#{$prefix}success-card;
+        @extend .base-dot-card;
+    }
+    
+    .#{$prefix}info-dot-card {
+        @extend .#{$prefix}info-card;
+        @extend .base-dot-card;
+    }
+    
+    .#{$prefix}warning-dot-card {
+        @extend .#{$prefix}warning-card;
+        @extend .base-dot-card;
+    }
+    
+    .#{$prefix}danger-dot-card {
+        @extend .#{$prefix}danger-card;
+        @extend .base-dot-card;
+    }
+    
+    .#{$prefix}dark-dot-card {
+        @extend .#{$prefix}dark-card;
+        @extend .base-dot-card;
+    }
+    
+    .#{$prefix}radius-card-6 {
+        border-radius: var(--space-6);
+    }
+    
+    .#{$prefix}radius-card-8 {
+        border-radius: var(--space-8);
+    }
+    
+    .#{$prefix}radius-card-10 {
+        border-radius: var(--space-10);
+    }
+    
+    .#{$prefix}radius-card-12 {
+        border-radius: var(--space-12);
+    }
+    
+    .#{$prefix}radius-card-14 {
+        border-radius: var(--space-14);
+    }
+    
+    .#{$prefix}radius-card-16 {
+        border-radius: var(--space-16);
+    }
+    
+    .#{$prefix}shadow-card-s {
+        @extend .base-card;
+        @extend .#{$prefix}shadow-s;
+    }
+    
+    .#{$prefix}shadow-card-m {
+        @extend .base-card;
+        @extend .#{$prefix}shadow-m;
+    }
+    
+    .#{$prefix}shadow-card-l {
+        @extend .base-card;
+        @extend .#{$prefix}shadow-l;
+    }
 }
 
-.success-card {
-    @extend .card;
-    border: 1px solid var(--success);
-}
-
-.info-card {
-    @extend .card;
-    border: 1px solid var(--info);
-}
-
-.warning-card {
-    @extend .card;
-    border: 1px solid var(--warning);
-}
-
-.danger-card {
-    @extend .card;
-    border: 1px solid var(--danger);
-}
-
-.dark-card {
-    @extend .card;
-    border: 1px solid var(--dark);
-}
-
-.dot-card {
-    border-style: dashed;
-}
-
-.dot-success-card {
-    @extend .success-card;
-    @extend .dot-card;
-}
-
-.dot-info-card {
-    @extend .info-card;
-    @extend .dot-card;
-}
-
-.dot-warning-card {
-    @extend .warning-card;
-    @extend .dot-card;
-}
-
-.dot-danger-card {
-    @extend .danger-card;
-    @extend .dot-card;
-}
-
-.dot-dark-card {
-    @extend .dark-card;
-    @extend .dot-card;
-}
-
-.radius-card-6 {
-    border-radius: var(--space-6);
-}
-
-.radius-card-8 {
-    border-radius: var(--space-8);
-}
-
-.radius-card-10 {
-    border-radius: var(--space-10);
-}
-
-.radius-card-12 {
-    border-radius: var(--space-12);
-}
-
-.radius-card-14 {
-    border-radius: var(--space-14);
-}
-
-.radius-card-16 {
-    border-radius: var(--space-16);
-}
-
-.shadow-card-s {
-    @extend .card;
-    @extend .shadow-s;
-}
-
-.shadow-card-m {
-    @extend .card;
-    @extend .shadow-m;
-}
-
-.shadow-card-l {
-    @extend .card;
-    @extend .shadow-l;
-}
+@include prefix-cards;

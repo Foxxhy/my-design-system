@@ -1,9 +1,10 @@
 .cover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    @extend .#{$prefix}position-fixed;
+    @extend .#{$prefix}top-0;
+    @extend .#{$prefix}left-0;
+    @extend .#{$prefix}width-full;
+    @extend .#{$prefix}height-full;
+
     background-color: rgba(0, 0, 0, 0.4);
     z-index: var(--elevation-cover);
 }

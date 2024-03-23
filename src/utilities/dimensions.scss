@@ -1,0 +1,29 @@
+@mixin base-width($width-value) {
+    width: $width-value;
+}
+
+@mixin base-height($height-value) {
+    height: $height-value;
+}
+
+@mixin prefix-dimensions {
+    .#{$prefix}width-full {
+        @include base-width(100%);
+    }
+
+    .#{$prefix}height-full {
+        @include base-height(100%);
+    }
+
+    @for $i from 0 to 25 {
+        .#{$prefix}width-#{$i} {
+            @include base-width(var(--space-#{$i * 2}));
+        }
+        
+        .#{$prefix}height-#{$i} {
+            @include base-height(var(--space-#{$i * 2}));
+        }
+    }
+}
+
+@include prefix-dimensions;

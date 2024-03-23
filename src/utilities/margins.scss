@@ -1,0 +1,46 @@
+@mixin base-margin($margin-size) {
+    margin: $margin-size;
+}
+
+@mixin base-margin-top($margin-size) {
+    margin-top: $margin-size;
+}
+
+@mixin base-margin-right($margin-size) {
+    margin-right: $margin-size;
+}
+
+@mixin base-margin-bottom($margin-size) {
+    margin-bottom: $margin-size;
+}
+
+@mixin base-margin-left($margin-size) {
+    margin-left: $margin-size;
+}
+
+@mixin prefix-margins {
+    @for $i from 0 to 25 {
+        .#{$prefix}margin-#{$i} {
+            @include base-margin(var(--space-#{$i * 2}));
+        }
+        
+        .#{$prefix}margin-top-#{$i} {
+            @include base-margin-top(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}margin-right-#{$i} {
+            @include base-margin-right(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}margin-bottom-#{$i} {
+            @include base-margin-bottom(var(--space-#{$i * 2}));
+        }
+        
+        .#{$prefix}margin-left-#{$i} {
+            @include base-margin-left(var(--space-#{$i * 2}));
+        }
+
+    }
+}
+
+@include prefix-margins;

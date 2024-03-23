@@ -1,0 +1,46 @@
+@mixin base-padding($padding-size) {
+    padding: $padding-size;
+}
+
+@mixin base-padding-top($padding-size) {
+    padding-top: $padding-size;
+}
+
+@mixin base-padding-right($padding-size) {
+    padding-right: $padding-size;
+}
+
+@mixin base-padding-bottom($padding-size) {
+    padding-bottom: $padding-size;
+}
+
+@mixin base-padding-left($padding-size) {
+    padding-left: $padding-size;
+}
+
+@mixin prefix-paddings {
+    @for $i from 0 to 25 {
+        .#{$prefix}padding-#{$i} {
+            @include base-padding(var(--space-#{$i * 2}));
+        }
+        
+        .#{$prefix}padding-top-#{$i} {
+            @include base-padding-top(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}padding-right-#{$i} {
+            @include base-padding-right(var(--space-#{$i * 2}));
+        }
+
+        .#{$prefix}padding-bottom-#{$i} {
+            @include base-padding-bottom(var(--space-#{$i * 2}));
+        }
+        
+        .#{$prefix}padding-left-#{$i} {
+            @include base-padding-left(var(--space-#{$i * 2}));
+        }
+
+    }
+}
+
+@include prefix-paddings;

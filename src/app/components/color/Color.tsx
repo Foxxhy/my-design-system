@@ -4,21 +4,21 @@ const ColorItem = (props: any) => {
     const { text, color } = props;
 
     return (
-        <div className="color-container-item">
+        <div className="section-container-item">
             <span className={`color-item ${color}-background`}></span>
             <span className='label-text'>{text}</span>
         </div>
     );
 };
 
-const Color = () => {
+const ColorSection = () => {
     return (
         <div>
             <h2 className="section-title">
                 Colors
             </h2>
             <div className="horizontal-separator" style={{ width: '500px'}} />
-            <div className="color-container" >
+            <div className="section-container" >
                 <ColorItem text="white - #fff" color="white" />
                 <ColorItem text="light - #f8f9fa" color="light" />
                 <ColorItem text="gray - #6c757d" color="gray" />
@@ -40,4 +40,4 @@ const Color = () => {
     )
 }
 
-export default Color;
+export default ColorSection;

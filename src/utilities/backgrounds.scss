@@ -1,0 +1,95 @@
+@mixin base-background-color($color) {
+    background-color: var(--#{$color});
+}
+
+@mixin prefix-backgrounds {
+    .#{$prefix}blue-background {
+        @include base-background-color(blue);
+    }
+
+    .#{$prefix}indigo-background {
+        @include base-background-color(indigo);
+    }
+
+    .#{$prefix}purple-background {
+        @include base-background-color(purple);
+    }
+
+    .#{$prefix}pink-background {
+        @include base-background-color(pink);
+    }
+
+    .#{$prefix}red-background {
+        @include base-background-color(red);
+    }
+
+    .#{$prefix}orange-background {
+        @include base-background-color(orange);
+    }
+
+    .#{$prefix}yellow-background {
+        @include base-background-color(yellow);
+    }
+
+    .#{$prefix}green-background {
+        @include base-background-color(green);
+    }
+
+    .#{$prefix}teal-background {
+        @include base-background-color(teal);
+    }
+
+    .#{$prefix}cyan-background {
+        @include base-background-color(cyan);
+    }
+
+    .#{$prefix}white-background {
+        @include base-background-color(white);
+    }
+
+    .#{$prefix}gray-background {
+        @include base-background-color(gray);
+    }
+
+    .#{$prefix}gray-dark-background {
+        @include base-background-color(gray-dark);
+    }
+
+    .#{$prefix}primary-background {
+        @include base-background-color(primary);
+    }
+
+    .#{$prefix}secondary-background {
+        @include base-background-color(secondary);
+    }
+
+    .#{$prefix}success-background {
+        @include base-background-color(success);
+    }
+
+    .#{$prefix}info-background {
+        @include base-background-color(info);
+    }
+
+    .#{$prefix}warning-background {
+        @include base-background-color(warning);
+    }
+
+    .#{$prefix}danger-background {
+        @include base-background-color(danger);
+    }
+
+    .#{$prefix}light-background {
+        @include base-background-color(light);
+    }
+
+    .#{$prefix}dark-background {
+        @include base-background-color(dark);
+    }
+
+    .#{$prefix}transparent-background {
+        @include base-background-color(transparent);
+    }
+}
+
+@include prefix-backgrounds;

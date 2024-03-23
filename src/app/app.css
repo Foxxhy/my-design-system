@@ -6,3 +6,19 @@
 
     margin: var(--space-24);
 }
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-16);
+}
+
+.section-container-item {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-16);
+    align-items: center;
+
+    width: 200px;
+}
