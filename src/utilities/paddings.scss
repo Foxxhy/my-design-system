@@ -20,23 +20,23 @@
 
 @mixin prefix-paddings {
     @for $i from 0 to 25 {
-        .#{$prefix}padding-#{$i} {
+        .#{$prefix}padding-#{$i * 2} {
             @include base-padding(var(--space-#{$i * 2}));
         }
         
-        .#{$prefix}padding-top-#{$i} {
+        .#{$prefix}padding-top-#{$i * 2} {
             @include base-padding-top(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}padding-right-#{$i} {
+        .#{$prefix}padding-right-#{$i * 2} {
             @include base-padding-right(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}padding-bottom-#{$i} {
+        .#{$prefix}padding-bottom-#{$i * 2} {
             @include base-padding-bottom(var(--space-#{$i * 2}));
         }
         
-        .#{$prefix}padding-left-#{$i} {
+        .#{$prefix}padding-left-#{$i * 2} {
             @include base-padding-left(var(--space-#{$i * 2}));
         }
 

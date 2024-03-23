@@ -13,6 +13,10 @@
     flex-direction: $direction-value;
 }
 
+@mixin base-justify-content($justify-value) {
+    justify-content: $justify-value;
+}
+
 @mixin base-align-items($align-value) {
     align-items: $align-value;
 }
@@ -34,16 +38,12 @@
         @include base-display(inline-block);
     }
 
+    .#{$prefix}display-flex {
+        @include base-display(flex);
+    }
+
     .#{$prefix}display-none {
         @include base-display(none);
-    }
-
-    .#{$prefix}flex-row {
-        @include base-flex(row);
-    }
-
-    .#{$prefix}flex-column {
-        @include base-flex(column);
     }
 
     .#{$prefix}flex-center {
@@ -62,6 +62,10 @@
         @include base-flex-direction(row);
     }
 
+    .#{$prefix}flex-column {
+        @include base-flex-direction(column);
+    }
+
     .#{$prefix}flex-row-reverse {
         @include base-flex-direction(row-reverse);
     }
@@ -78,8 +82,32 @@
         @include base-align-items(flex-end);
     }
 
+    .#{$prefix}justify-start {
+        @include base-justify-content(flex-start);
+    }
+
+    .#{$prefix}justify-end {
+        @include base-justify-content(flex-end);
+    }
+
+    .#{$prefix}justify-center {
+        @include base-justify-content(center);
+    }
+
+    .#{$prefix}justify-between {
+        @include base-justify-content(space-between);
+    }
+
+    .#{$prefix}justify-around {
+        @include base-justify-content(space-around);
+    }
+
+    .#{$prefix}justify-evenly {
+        @include base-justify-content(space-evenly);
+    }
+
     @for $i from 0 to 24 {
-        .#{$prefix}flex-gap-#{$i} {
+        .#{$prefix}gap-#{$i} {
             @include base-flex-gap(var(--space-#{$i * 2}));
         }
     }

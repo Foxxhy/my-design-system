@@ -20,23 +20,23 @@
 
 @mixin prefix-margins {
     @for $i from 0 to 25 {
-        .#{$prefix}margin-#{$i} {
+        .#{$prefix}margin-#{$i * 2} {
             @include base-margin(var(--space-#{$i * 2}));
         }
         
-        .#{$prefix}margin-top-#{$i} {
+        .#{$prefix}margin-top-#{$i * 2} {
             @include base-margin-top(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}margin-right-#{$i} {
+        .#{$prefix}margin-right-#{$i * 2} {
             @include base-margin-right(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}margin-bottom-#{$i} {
+        .#{$prefix}margin-bottom-#{$i * 2} {
             @include base-margin-bottom(var(--space-#{$i * 2}));
         }
         
-        .#{$prefix}margin-left-#{$i} {
+        .#{$prefix}margin-left-#{$i * 2} {
             @include base-margin-left(var(--space-#{$i * 2}));
         }
 

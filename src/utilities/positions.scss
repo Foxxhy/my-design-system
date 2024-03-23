@@ -46,19 +46,19 @@
     }
 
     @for $i from 0 to 25 {
-        .#{$prefix}top-#{$i} {
+        .#{$prefix}top-#{$i * 2} {
             @include base-top(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}bottom-#{$i} {
+        .#{$prefix}bottom-#{$i * 2} {
             @include base-bottom(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}right-#{$i} {
+        .#{$prefix}right-#{$i * 2} {
             @include base-right(var(--space-#{$i * 2}));
         }
 
-        .#{$prefix}left-#{$i} {
+        .#{$prefix}left-#{$i * 2} {
             @include base-left(var(--space-#{$i * 2}));
         }
     }

@@ -1,0 +1,18 @@
+// Mixin pour définir le rayon de bordure
+@mixin base-border-radius($radius-size) {
+    border-radius: $radius-size;
+}
+
+@mixin prefix-border-radius { 
+    .#{$prefix}radius-circle {
+        @include base-border-radius(50%);
+    }
+
+    @for $i from 0 to 24 {
+        .#{$prefix}radius-#{$i * 2} {
+            @include base-border-radius(var(--space-#{$i * 2}));
+        }
+    }
+}
+
+@include prefix-border-radius;

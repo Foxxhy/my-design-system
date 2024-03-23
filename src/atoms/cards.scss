@@ -1,60 +1,70 @@
+@mixin base-card() {
+    padding: var(--space-16);
+}
+
+@mixin base-border-card($type, $color) {
+    border: 1px $type $color;
+}
+
+@mixin base-solid-card($color) {
+    border: 1px solid $color;
+}
+
+@mixin base-dashed-card($color) {
+    border: 1px dashed $color;
+}
+
 @mixin prefix-cards {
-    .base-card {
-        padding: var(--space-16);
-    }
-    
-    .base-dot-card {
-        border-style: dashed;
-    }
+
     
     .#{$prefix}success-card {
-        @extend .#{$prefix}base-card;
-        border: 1px solid var(--success);
+        @include base-card;
+        @include base-border-card(solid, var(--success));
     }
     
     .#{$prefix}info-card {
-        @extend .#{$prefix}base-card;
-        border: 1px solid var(--info);
+        @include base-card;
+        @include base-border-card(solid, var(--info));
     }
     
     .#{$prefix}warning-card {
-        @extend .#{$prefix}base-card;
-        border: 1px solid var(--warning);
+        @include base-card;
+        @include base-border-card(solid, var(--warning));
     }
     
     .#{$prefix}danger-card {
-        @extend .#{$prefix}base-card;
-        border: 1px solid var(--danger);
+        @include base-card;
+        @include base-border-card(solid, var(--danger));
     }
     
     .#{$prefix}dark-card {
-        @extend .#{$prefix}base-card;
-        border: 1px solid var(--dark);
+        @include base-card;
+        @include base-border-card(solid, var(--dark));
     }
     
     .#{$prefix}success-dot-card {
-        @extend .#{$prefix}success-card;
-        @extend .base-dot-card;
+        @include base-card;
+        @include base-border-card(dashed, var(--success));
     }
     
     .#{$prefix}info-dot-card {
-        @extend .#{$prefix}info-card;
-        @extend .base-dot-card;
+        @include base-card;
+        @include base-border-card(dashed, var(--info));
     }
     
     .#{$prefix}warning-dot-card {
-        @extend .#{$prefix}warning-card;
-        @extend .base-dot-card;
+        @include base-card;
+        @include base-border-card(dashed, var(--warning));
     }
     
     .#{$prefix}danger-dot-card {
-        @extend .#{$prefix}danger-card;
-        @extend .base-dot-card;
+        @include base-card;
+        @include base-border-card(dashed, var(--danger));
     }
     
     .#{$prefix}dark-dot-card {
-        @extend .#{$prefix}dark-card;
-        @extend .base-dot-card;
+        @include base-card;
+        @include base-border-card(dashed, var(--dark));
     }
     
     .#{$prefix}radius-card-6 {
@@ -82,17 +92,17 @@
     }
     
     .#{$prefix}shadow-card-s {
-        @extend .base-card;
+        @include base-card;
         @extend .#{$prefix}shadow-s;
     }
     
     .#{$prefix}shadow-card-m {
-        @extend .base-card;
+        @include base-card;
         @extend .#{$prefix}shadow-m;
     }
     
     .#{$prefix}shadow-card-l {
-        @extend .base-card;
+        @include base-card;
         @extend .#{$prefix}shadow-l;
     }
 }

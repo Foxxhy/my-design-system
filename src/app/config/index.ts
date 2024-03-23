@@ -1,1 +1,2 @@
-export* from './config.example';
+export * from './config.app';
+export * from './config.example';
