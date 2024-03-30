@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+@mixin base-disable {
+    cursor: not-allowed;
+}
+
 @mixin base-hover($color) {
 
     &:hover,
@@ -58,6 +62,11 @@
     .#{$prefix}dark-button {
         @include base-button(--font-secondary, --text-size-m, --light, --dark, --dark);
     }
+
+    .#{$prefix}disable-button {
+        @include base-button(--font-secondary, --text-size-m, --light, --gray, --gray);
+        @include base-disable;
+    }
     
     .#{$prefix}success-outline-button {
         @include base-outline-button(--success);
@@ -81,6 +90,11 @@
     
     .#{$prefix}dark-outline-button {
         @include base-outline-button(--dark);
+    }
+
+    .#{$prefix}gray-outline-button {
+        @include base-outline-button(--dark);
+        @include base-disable;
     }
     
     .#{$prefix}success-button-hover {

@@ -1,4 +1,4 @@
-export const configExample: object = {
+export const configExample: any = {
     title: {
         short: 'Lorem Ipsum',
         medium: 'Lorem ipsum dolor sit amet',

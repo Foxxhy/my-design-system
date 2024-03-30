@@ -70,15 +70,15 @@
         @include base-flex-direction(row-reverse);
     }
 
-    .#{$prefix}align-items-start {
+    .#{$prefix}align-start {
         @include base-align-items(flex-start);
     }
 
-    .#{$prefix}align-items-center {
+    .#{$prefix}align-center {
         @include base-align-items(center);
     }
 
-    .#{$prefix}align-items-end {
+    .#{$prefix}align-end {
         @include base-align-items(flex-end);
     }
 

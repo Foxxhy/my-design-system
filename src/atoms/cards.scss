@@ -67,30 +67,6 @@
         @include base-border-card(dashed, var(--dark));
     }
     
-    .#{$prefix}radius-card-6 {
-        border-radius: var(--space-6);
-    }
-    
-    .#{$prefix}radius-card-8 {
-        border-radius: var(--space-8);
-    }
-    
-    .#{$prefix}radius-card-10 {
-        border-radius: var(--space-10);
-    }
-    
-    .#{$prefix}radius-card-12 {
-        border-radius: var(--space-12);
-    }
-    
-    .#{$prefix}radius-card-14 {
-        border-radius: var(--space-14);
-    }
-    
-    .#{$prefix}radius-card-16 {
-        border-radius: var(--space-16);
-    }
-    
     .#{$prefix}shadow-card-s {
         @include base-card;
         @extend .#{$prefix}shadow-s;
