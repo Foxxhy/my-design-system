@@ -3,17 +3,6 @@ import { addPrefixer } from '../../providers/addPrefixer';
 
 // className={`${addPrefixer('main-title')}`}
 
-const ColorItem = (props: any) => {
-    const { text, color } = props;
-
-    return (
-        <div style={{ width: '230px' }} className={`${addPrefixer('display-flex')} ${addPrefixer('direction-row')} ${addPrefixer('gap-16')} ${addPrefixer('align-center')}`}>
-            <span className={`${color}-background ${addPrefixer('width-40')} ${addPrefixer('height-40')} ${addPrefixer('radius-10')}`}></span>
-            <span className='label-text'>{text}</span>
-        </div>
-    );
-};
-
 const GlobalSection = () => {
     return (
         <>
