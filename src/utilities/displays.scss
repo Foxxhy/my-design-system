@@ -26,23 +26,23 @@
 }
 
 @mixin prefix-displays {
-    .#{$prefix}display-block {
+    .#{$prefix}block {
         @include base-display(block);
     }
 
-    .#{$prefix}display-inline {
+    .#{$prefix}inline {
         @include base-display(inline);
     }
 
-    .#{$prefix}display-inline-block {
+    .#{$prefix}inline-block {
         @include base-display(inline-block);
     }
 
-    .#{$prefix}display-flex {
+    .#{$prefix}flex {
         @include base-display(flex);
     }
 
-    .#{$prefix}display-none {
+    .#{$prefix}none {
         @include base-display(none);
     }
 

@@ -8,15 +8,7 @@
     }
 }
 
-@mixin prefix-texts {
-    .#{$prefix}text {
-        @include base-text(--font-primary, --text-size-m, --primary, null);
-    }
-
-    .#{$prefix}label-text {
-        @include base-text(--font-secondary, --text-size-m, --secondary, --weight-bold);
-    }
-
+@mixin prefix-fonts {
     .#{$prefix}primary-text {
         font-family: var(--font-primary);
     }
@@ -90,80 +82,4 @@
     }
 }
 
-@include prefix-texts;
-
-// .text {
-//     @include base-text(--font-primary, --text-size-m, --primary, null);
-// }
-
-// .label-text {
-//     @include base-text(--font-secondary, --text-size-m, --secondary, --weight-bold);
-// }
-
-// .primary-text {
-//     font-family: var(--font-primary);
-// }
-
-// .secondary-text {
-//     font-family: var(--font-secondary);
-// }
-
-// .weight-text-thin {
-//     font-weight: var(--weight-thin);
-// }
-
-// .weight-text-100 {
-//     font-weight: var(--weight-100);
-// }
-
-// .weight-text-200 {
-//     font-weight: var(--weight-200);
-// }
-
-// .weight-text-300 {
-//     font-weight: var(--weight-300);
-// }
-
-// .weight-text-400 {
-//     font-weight: var(--weight-400);
-// }
-
-// .weight-text-500 {
-//     font-weight: var(--weight-500);
-// }
-
-// .weight-text-normal {
-//     font-weight: var(--weight-normal);
-// }
-
-// .weight-text-600 {
-//     font-weight: var(--weight-600);
-// }
-
-// .weight-text-bold {
-//     font-weight: var(--weight-bold);
-// }
-
-// .weight-text-700 {
-//     font-weight: var(--weight-700);
-// }
-
-// .weight-text-800 {
-//     font-weight: var(--weight-800);
-// }
-
-// .weight-text-bolder {
-//     font-weight: var(--weight-bolder);
-// }
-
-// .weight-text-900 {
-//     font-weight: var(--weight-900);
-// }
-
-// .style-text-italic {
-//     font-style: italic;
-// }
-
-// .style-text-line-through {
-//     text-decoration: line-through;
-// }
+@include prefix-fonts;

@@ -6,11 +6,11 @@
 }
 
 @mixin prefix-separators { 
-	.#{$prefix}vertical-separator {
+	.#{$prefix}separator-vertical {
 		@include base-separator(1px, 100%, 0 var(--space-16));
 	}
 	
-	.#{$prefix}horizontal-separator {
+	.#{$prefix}separator-horizontal {
 		@include base-separator(100%, 1px, var(--space-16) 0);
 	}
 }

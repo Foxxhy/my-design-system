@@ -7,28 +7,29 @@ const ModalSection = () => {
 
     return (
         <div>
-            <div className="button-container">
-                <button className="info-button" onClick={() => setModal(true)} >Open modal</button>
-                <button className="dark-outline-button" onClick={() => setDialog(true)}>Open dialog</button>
+            <div className="f-flex f-flex-row f-flex-wrap f-gap-6 f-margin-bottom-16">
+                <button className="f-button-info" onClick={() => setModal(true)} >Open modal</button>
+                <button className="f-button-outline-info" onClick={() => setDialog(true)}>Open dialog</button>
             </div>
-            <div className="button-container">
+            <div className={modal ? 'f-modal-show' : 'f-modal-hide'} >
+                Click on cta to close modal
+                <button className="f-button-danger" onClick={() => setModal(false)} >fermer</button>
+            </div>
+            <div className={dialog ? 'f-dialog-show' : 'f-dialog-hide'} >
+                Click on cta to close dialog
+                <button className="f-button-danger" onClick={() => setDialog(false)} >fermer</button>
+            </div>
+            <div className="f-flex f-flex-row f-flex-wrap f-gap-6 f-margin-bottom-16">
                 <div className='shadow-card-m'>
-                    <button className="header-collapse" onClick={() => setCollapse(!collapse)}>Open dropdown</button>
-                    <div className={collapse ? 'show-body-collapse' : 'hidden-body-collapse'} >
+                    <button className="f-collapse-header" onClick={() => setCollapse(!collapse)}>Open dropdown</button>
+                    <div className={collapse ? 'f-collapse-body-show' : 'f-collapse-body-hide'} >
                         Coucou
                     </div>
                 </div>
             </div>
-            <div className={modal ? 'show-modal' : 'hide-modal'} >
-                Click on cta to close
-                <button className="info-button" onClick={() => setModal(false)} >fermer</button>
-            </div>
-            <div className={dialog ? 'show-dialog' : 'hide-dialog'} >
-                Click on cta to close
-                <button className="info-button" onClick={() => setDialog(false)} >fermer</button>
+            <div className={(modal) ? 'f-cover-shadow' : ''} ></div>
+            <div className={(dialog) ? 'f-cover-vague' : ''} ></div>
 
-            </div>
-            <div className={(modal || dialog) ? 'cover' : ''} ></div>
         </div>
     )
 }

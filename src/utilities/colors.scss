@@ -3,91 +3,91 @@
 }
 
 @mixin prefix-colors {
-    .#{$prefix}blue-color {
+    .#{$prefix}color-blue {
         @include base-color(blue);
     }
 
-    .#{$prefix}indigo-color {
+    .#{$prefix}color-indigo {
         @include base-color(indigo);
     }
 
-    .#{$prefix}purple-color {
+    .#{$prefix}color-purple {
         @include base-color(purple);
     }
 
-    .#{$prefix}pink-color {
+    .#{$prefix}color-pink {
         @include base-color(pink);
     }
 
-    .#{$prefix}red-color {
+    .#{$prefix}color-red {
         @include base-color(red);
     }
 
-    .#{$prefix}orange-color {
+    .#{$prefix}color-orange {
         @include base-color(orange);
     }
 
-    .#{$prefix}yellow-color {
+    .#{$prefix}color-yellow {
         @include base-color(yellow);
     }
 
-    .#{$prefix}green-color {
+    .#{$prefix}color-green {
         @include base-color(green);
     }
 
-    .#{$prefix}teal-color {
+    .#{$prefix}color-teal {
         @include base-color(teal);
     }
 
-    .#{$prefix}cyan-color {
+    .#{$prefix}color-cyan {
         @include base-color(cyan);
     }
 
-    .#{$prefix}white-color {
+    .#{$prefix}color-white {
         @include base-color(white);
     }
 
-    .#{$prefix}gray-color {
+    .#{$prefix}color-gray {
         @include base-color(gray);
     }
 
-    .#{$prefix}gray-dark-color {
+    .#{$prefix}color-gray-dark {
         @include base-color(gray-dark);
     }
 
-    .#{$prefix}primary-color {
+    .#{$prefix}color-primary {
         @include base-color(primary);
     }
 
-    .#{$prefix}secondary-color {
+    .#{$prefix}color-secondary {
         @include base-color(secondary);
     }
 
-    .#{$prefix}success-color {
+    .#{$prefix}color-success {
         @include base-color(success);
     }
 
-    .#{$prefix}info-color {
+    .#{$prefix}color-info {
         @include base-color(info);
     }
 
-    .#{$prefix}warning-color {
+    .#{$prefix}color-warning {
         @include base-color(warning);
     }
 
-    .#{$prefix}danger-color {
+    .#{$prefix}color-danger {
         @include base-color(danger);
     }
 
-    .#{$prefix}light-color {
+    .#{$prefix}color-light {
         @include base-color(light);
     }
 
-    .#{$prefix}dark-color {
+    .#{$prefix}xcolor-light {
         @include base-color(dark);
     }
 
-    .#{$prefix}transparent-color {
+    .#{$prefix}color-transparent {
         @include base-color(transparent);
     }
 }

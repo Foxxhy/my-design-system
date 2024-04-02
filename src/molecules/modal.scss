@@ -1,5 +1,5 @@
 @mixin base-modal($width, $height, $z-index, $breakpoint) {
-    @extend .#{$prefix}position-fixed;
+    @extend .#{$prefix}fixed;
     @extend .#{$prefix}center;
 
     width: $width;
@@ -21,20 +21,24 @@
     display: none;
 }
 
-.show-modal {
-    @include base-modal(600px, 500px, var(--elevation-modal), var(--breakpoint-m));
-    @include base-modal-responsive(90%, 90%);
+@mixin prefix-modal { 
+    .#{$prefix}modal-show {
+        @include base-modal(600px, 500px, var(--elevation-modal), var(--breakpoint-m));
+        @include base-modal-responsive(90%, 90%);
+    }
+    
+    .#{$prefix}dialog-show {
+        @include base-modal(500px, 350px, var(--elevation-dialog), var(--breakpoint-m));
+        @include base-modal-responsive(90%, 300px);
+    }
+    
+    .#{$prefix}modal-hide {
+        @include base-hide-modal();
+    }
+    
+    .#{$prefix}dialog-hide {
+        @include base-hide-modal();
+    }
 }
 
-.show-dialog {
-    @include base-modal(500px, 350px, var(--elevation-dialog), var(--breakpoint-m));
-    @include base-modal-responsive(90%, 300px);
-}
-
-.hide-modal {
-    @include base-hide-modal();
-}
-
-.hide-dialog {
-    @include base-hide-modal();
-}
+@include prefix-modal;

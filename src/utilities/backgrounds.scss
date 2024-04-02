@@ -3,91 +3,91 @@
 }
 
 @mixin prefix-backgrounds {
-    .#{$prefix}blue-background {
+    .#{$prefix}background-blue {
         @include base-background-color(blue);
     }
 
-    .#{$prefix}indigo-background {
+    .#{$prefix}background-indigo {
         @include base-background-color(indigo);
     }
 
-    .#{$prefix}purple-background {
+    .#{$prefix}background-purple {
         @include base-background-color(purple);
     }
 
-    .#{$prefix}pink-background {
+    .#{$prefix}background-pink {
         @include base-background-color(pink);
     }
 
-    .#{$prefix}red-background {
+    .#{$prefix}background-red {
         @include base-background-color(red);
     }
 
-    .#{$prefix}orange-background {
+    .#{$prefix}background-orange {
         @include base-background-color(orange);
     }
 
-    .#{$prefix}yellow-background {
+    .#{$prefix}background-yellow {
         @include base-background-color(yellow);
     }
 
-    .#{$prefix}green-background {
+    .#{$prefix}background-green {
         @include base-background-color(green);
     }
 
-    .#{$prefix}teal-background {
+    .#{$prefix}background-teal {
         @include base-background-color(teal);
     }
 
-    .#{$prefix}cyan-background {
+    .#{$prefix}background-cyan {
         @include base-background-color(cyan);
     }
 
-    .#{$prefix}white-background {
+    .#{$prefix}background-white {
         @include base-background-color(white);
     }
 
-    .#{$prefix}gray-background {
+    .#{$prefix}background-gray {
         @include base-background-color(gray);
     }
 
-    .#{$prefix}gray-dark-background {
+    .#{$prefix}background-gray-dark {
         @include base-background-color(gray-dark);
     }
 
-    .#{$prefix}primary-background {
+    .#{$prefix}background-primary {
         @include base-background-color(primary);
     }
 
-    .#{$prefix}secondary-background {
+    .#{$prefix}background-secondary {
         @include base-background-color(secondary);
     }
 
-    .#{$prefix}success-background {
+    .#{$prefix}background-success {
         @include base-background-color(success);
     }
 
-    .#{$prefix}info-background {
+    .#{$prefix}background-info {
         @include base-background-color(info);
     }
 
-    .#{$prefix}warning-background {
+    .#{$prefix}background-warning {
         @include base-background-color(warning);
     }
 
-    .#{$prefix}danger-background {
+    .#{$prefix}background-danger {
         @include base-background-color(danger);
     }
 
-    .#{$prefix}light-background {
+    .#{$prefix}background-light {
         @include base-background-color(light);
     }
 
-    .#{$prefix}dark-background {
+    .#{$prefix}background-dark {
         @include base-background-color(dark);
     }
 
-    .#{$prefix}transparent-background {
+    .#{$prefix}background-transparent {
         @include base-background-color(transparent);
     }
 }

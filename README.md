@@ -1,4 +1,3 @@
-
 # Design System
 Ce document contient les directives et les conventions pour utiliser le Design System dans vos projets. Le Design System fournit une série de variables, de classes et de composants réutilisables pour garantir la cohérence visuelle et la facilité de développement.
 

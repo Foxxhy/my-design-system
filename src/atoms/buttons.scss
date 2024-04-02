@@ -5,8 +5,8 @@
 
     background-color: var($background-color);
     border: solid 1px var($border-color);
-    padding: var(--space-6) var(--space-12);
-    border-radius: var(--space-6);
+    padding: var(--space-8) var(--space-14);
+    border-radius: var(--space-8);
 
     cursor: pointer;
 }
@@ -29,7 +29,6 @@
 }
 
 @mixin base-hover($color) {
-
     &:hover,
     &:focus {
         opacity: 0.85;
@@ -39,89 +38,89 @@
 }
 
 @mixin prefix-buttons {
-    .#{$prefix}success-button {
+    .#{$prefix}button-success {
         @include base-button(--font-secondary, --text-size-m, --white, --success, --success);
     }
     
-    .#{$prefix}info-button {
+    .#{$prefix}button-info {
         @include base-button(--font-secondary, --text-size-m, --white, --info, --info);
     }
     
-    .#{$prefix}warning-button {
+    .#{$prefix}button-warning {
         @include base-button(--font-secondary, --text-size-m, --white, --warning, --warning);
     }
     
-    .#{$prefix}danger-button {
+    .#{$prefix}button-danger {
         @include base-button(--font-secondary, --text-size-m, --white, --danger, --danger);
     }
     
-    .#{$prefix}light-button {
+    .#{$prefix}button-light {
         @include base-button(--font-secondary, --text-size-m, --dark, --light, --light);
     }
     
-    .#{$prefix}dark-button {
+    .#{$prefix}button-dark {
         @include base-button(--font-secondary, --text-size-m, --light, --dark, --dark);
     }
 
-    .#{$prefix}disable-button {
+    .#{$prefix}button-disable {
         @include base-button(--font-secondary, --text-size-m, --light, --gray, --gray);
         @include base-disable;
     }
     
-    .#{$prefix}success-outline-button {
+    .#{$prefix}button-outline-success {
         @include base-outline-button(--success);
     }
     
-    .#{$prefix}info-outline-button {
+    .#{$prefix}button-outline-info {
         @include base-outline-button(--info);
     }
     
-    .#{$prefix}warning-outline-button {
+    .#{$prefix}button-outline-warning {
         @include base-outline-button(--warning);
     }
     
-    .#{$prefix}danger-outline-button {
+    .#{$prefix}button-outline-danger {
         @include base-outline-button(--danger);
     }
     
-    .#{$prefix}light-outline-button {
+    .#{$prefix}button-outline-light {
         @include base-outline-button(--dark);
     }
     
-    .#{$prefix}dark-outline-button {
+    .#{$prefix}button-outline-dark {
         @include base-outline-button(--dark);
     }
 
-    .#{$prefix}gray-outline-button {
+    .#{$prefix}button-outline-gray {
         @include base-outline-button(--dark);
         @include base-disable;
     }
     
-    .#{$prefix}success-button-hover {
+    .#{$prefix}button-success-hover {
         @include base-hover(--success);
     }
     
-    .#{$prefix}info-button-hover {
+    .#{$prefix}button-info-hover {
         @include base-hover(--info);
     }
     
-    .#{$prefix}warning-button-hover {
+    .#{$prefix}button-warning-hover {
         @include base-hover(--warning);
     }
     
-    .#{$prefix}danger-button-hover {
+    .#{$prefix}button-danger-hover {
         @include base-hover(--danger);
     }
     
-    .#{$prefix}light-button-hover {
+    .#{$prefix}button-light-hover {
         @include base-hover(--light);
     }
     
-    .#{$prefix}dark-button-hover {
+    .#{$prefix}button-dark-hover {
         @include base-hover(--dark);
     }
     
-    .#{$prefix}outline-button-hover {
+    .#{$prefix}button-outline-hover {
     
         &:hover,
         &:focus {

@@ -12,31 +12,31 @@
 }
 
 @mixin prefix-badges {
-    .#{$prefix}dark-badge {
+    .#{$prefix}badge-dark {
         @include base-badge(var(--transparent), var(--dark));
     }
     
-    .#{$prefix}success-badge {
+    .#{$prefix}badge-success {
         @include base-badge(var(--success), var(--white));
     }
     
-    .#{$prefix}info-badge {
+    .#{$prefix}badge-info {
         @include base-badge(var(--info), var(--white));
     }
     
-    .#{$prefix}warning-badge {
+    .#{$prefix}badge-warning {
         @include base-badge(var(--warning), var(--dark));
     }
     
-    .#{$prefix}danger-badge {
+    .#{$prefix}badge-danger {
         @include base-badge(var(--danger), var(--white));
     }
     
-    .#{$prefix}primary-badge {
+    .#{$prefix}badge-primary {
         @include base-badge(var(--primary), var(--white));
     }
     
-    .#{$prefix}secondary-badge {
+    .#{$prefix}badge-secondary {
         @include base-badge(var(--secondary), var(--white));
     }
 }

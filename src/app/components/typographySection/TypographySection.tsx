@@ -4,7 +4,7 @@ const TypographySection = () => {
     const { paragraph } = configExample.typography;
 
     return (
-        <ul className="list-column" >
+        <ul className="f-flex f-flex-column f-gap-8 f-margin-top-24" >
             <li>
                 <span className="text">
                     {paragraph}

@@ -1,10 +1,26 @@
-.cover {
-    @extend .#{$prefix}position-fixed;
-    @extend .#{$prefix}top-0;
-    @extend .#{$prefix}left-0;
-    @extend .#{$prefix}width-full;
-    @extend .#{$prefix}height-full;
+@mixin prefix-cover { 
+    .#{$prefix}cover-shadow {
+        @extend .#{$prefix}fixed;
+        @extend .#{$prefix}top-0;
+        @extend .#{$prefix}left-0;
+        @extend .#{$prefix}width-full;
+        @extend .#{$prefix}height-full;
+    
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: var(--elevation-cover);
+    }
 
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: var(--elevation-cover);
+    .#{$prefix}cover-vague {
+        @extend .#{$prefix}fixed;
+        @extend .#{$prefix}top-0;
+        @extend .#{$prefix}left-0;
+        @extend .#{$prefix}width-full;
+        @extend .#{$prefix}height-full;
+    
+        -webkit-backdrop-filter: blur(var(--space-2)); /* assure la compatibilité avec safari */
+        backdrop-filter: blur(var(--space-2));
+        z-index: var(--elevation-cover);
+    }
 }
+
+@include prefix-cover;

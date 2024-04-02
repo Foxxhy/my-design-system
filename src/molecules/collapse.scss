@@ -1,27 +1,33 @@
-.header-collapse {
-    @extend .#{$prefix}width-full;
-    text-align: left;
+@mixin prefix-collapse { 
+	.#{$prefix}separator-vertical {
+		@include base-separator(1px, 100%, 0 var(--space-16));
+	}
 
-    background-color: var(--white);
-    padding: var(--space-16);
-
-    border: none;
-    outline: none;
-    cursor: pointer;
+    .#{$prefix}collapse-header {
+        @extend .#{$prefix}width-full;
+        text-align: left;
+    
+        background-color: var(--white);
+        padding: var(--space-16);
+    
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .#{$prefix}collapse-body-hide {
+        @extend .#{$prefix}none;
+        @extend .#{$prefix}width-full;
+        padding: var(--space-16);
+    }
+    
+    .#{$prefix}collapse-body-show {
+        @extend .#{$prefix}block;
+        @extend .#{$prefix}width-full;
+    
+        background-color: var(--white);
+        padding: var(--space-16);
+    }
 }
 
-.hidden-body-collapse {
-    @extend .#{$prefix}display-none;
-    @extend .#{$prefix}width-full;
-    padding: var(--space-16);
-}
-
-.show-body-collapse {
-    @extend .#{$prefix}display-block;
-    @extend .#{$prefix}width-full;
-
-    background-color: var(--white);
-    padding: var(--space-16);
-}
-
-// text-align: left;
+@include prefix-collapse;

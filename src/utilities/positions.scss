@@ -25,23 +25,23 @@
 }
 
 @mixin prefix-positions {
-    .#{$prefix}position-static {
+    .#{$prefix}static {
         @include base-position(static);
     }
 
-    .#{$prefix}position-relative {
+    .#{$prefix}relative {
         @include base-position(relative);
     }
 
-    .#{$prefix}position-absolute {
+    .#{$prefix}absolute {
         @include base-position(absolute);
     }
 
-    .#{$prefix}position-fixed {
+    .#{$prefix}fixed {
         @include base-position(fixed);
     }
 
-    .#{$prefix}position-sticky {
+    .#{$prefix}sticky {
         @include base-position(sticky);
     }
 

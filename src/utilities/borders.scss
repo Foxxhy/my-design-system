@@ -1,0 +1,572 @@
+@mixin base-border($color) {
+    border: 1px solid var(--#{$color});
+}
+
+@mixin base-border-top($color) {
+    border-top: 1px solid var(--#{$color});
+}
+
+@mixin base-border-right($color) {
+    border-right: 1px solid var(--#{$color});
+}
+
+@mixin base-border-bottom($color) {
+    border-bottom: 1px solid var(--#{$color});
+}
+
+@mixin base-border-left($color) {
+    border-left: 1px solid var(--#{$color});
+}
+
+@mixin base-border-bottom-hover($color) {
+
+    &:hover {
+        border-bottom: 1px solid var(--#{$color});
+    }
+}
+
+@mixin prefix-borders {
+    .#{$prefix}border-blue {
+        @include base-border(blue);
+    }
+
+    .#{$prefix}border-indigo {
+        @include base-border(indigo);
+    }
+
+    .#{$prefix}border-purple {
+        @include base-border(purple);
+    }
+
+    .#{$prefix}border-pink {
+        @include base-border(pink);
+    }
+
+    .#{$prefix}border-red {
+        @include base-border(red);
+    }
+
+    .#{$prefix}border-orange {
+        @include base-border(orange);
+    }
+
+    .#{$prefix}border-yellow {
+        @include base-border(yellow);
+    }
+
+    .#{$prefix}border-green {
+        @include base-border(green);
+    }
+
+    .#{$prefix}border-teal {
+        @include base-border(teal);
+    }
+
+    .#{$prefix}border-cyan {
+        @include base-border(cyan);
+    }
+
+    .#{$prefix}border-white {
+        @include base-border(white);
+    }
+
+    .#{$prefix}border-gray {
+        @include base-border(gray);
+    }
+
+    .#{$prefix}border-gray-dark {
+        @include base-border(gray-dark);
+    }
+
+    .#{$prefix}border-primary {
+        @include base-border(primary);
+    }
+
+    .#{$prefix}border-secondary {
+        @include base-border(secondary);
+    }
+
+    .#{$prefix}border-success {
+        @include base-border(success);
+    }
+
+    .#{$prefix}border-info {
+        @include base-border(info);
+    }
+
+    .#{$prefix}border-warning {
+        @include base-border(warning);
+    }
+
+    .#{$prefix}border-danger {
+        @include base-border(danger);
+    }
+
+    .#{$prefix}border-light {
+        @include base-border(light);
+    }
+
+    .#{$prefix}border-dark {
+        @include base-border(dark);
+    }
+
+    .#{$prefix}border-transparent {
+        @include base-border(transparent);
+    }
+
+    /* Border top */
+
+    .#{$prefix}border-top-blue {
+        @include base-border-top(blue);
+    }
+
+    .#{$prefix}border-top-indigo {
+        @include base-border-top(indigo);
+    }
+
+    .#{$prefix}border-top-purple {
+        @include base-border-top(purple);
+    }
+
+    .#{$prefix}border-top-pink {
+        @include base-border-top(pink);
+    }
+
+    .#{$prefix}border-top-red {
+        @include base-border-top(red);
+    }
+
+    .#{$prefix}border-top-orange {
+        @include base-border-top(orange);
+    }
+
+    .#{$prefix}border-top-yellow {
+        @include base-border-top(yellow);
+    }
+
+    .#{$prefix}border-top-green {
+        @include base-border-top(green);
+    }
+
+    .#{$prefix}border-top-teal {
+        @include base-border-top(teal);
+    }
+
+    .#{$prefix}border-top-cyan {
+        @include base-border-top(cyan);
+    }
+
+    .#{$prefix}border-top-white {
+        @include base-border-top(white);
+    }
+
+    .#{$prefix}border-top-gray {
+        @include base-border-top(gray);
+    }
+
+    .#{$prefix}border-top-gray-dark {
+        @include base-border-top(gray-dark);
+    }
+
+    .#{$prefix}border-top-primary {
+        @include base-border-top(primary);
+    }
+
+    .#{$prefix}border-top-secondary {
+        @include base-border-top(secondary);
+    }
+
+    .#{$prefix}border-top-success {
+        @include base-border-top(success);
+    }
+
+    .#{$prefix}border-top-info {
+        @include base-border-top(info);
+    }
+
+    .#{$prefix}border-top-warning {
+        @include base-border-top(warning);
+    }
+
+    .#{$prefix}border-top-danger {
+        @include base-border-top(danger);
+    }
+
+    .#{$prefix}border-top-light {
+        @include base-border-top(light);
+    }
+
+    .#{$prefix}border-top-dark {
+        @include base-border-top(dark);
+    }
+
+    .#{$prefix}border-top-transparent {
+        @include base-border-top(transparent);
+    }
+
+
+    /* Border right */
+
+    .#{$prefix}border-right-blue {
+        @include base-border-right(blue);
+    }
+
+    .#{$prefix}border-right-indigo {
+        @include base-border-right(indigo);
+    }
+
+    .#{$prefix}border-right-purple {
+        @include base-border-right(purple);
+    }
+
+    .#{$prefix}border-right-pink {
+        @include base-border-right(pink);
+    }
+
+    .#{$prefix}border-right-red {
+        @include base-border-right(red);
+    }
+
+    .#{$prefix}border-right-orange {
+        @include base-border-right(orange);
+    }
+
+    .#{$prefix}border-right-yellow {
+        @include base-border-right(yellow);
+    }
+
+    .#{$prefix}border-right-green {
+        @include base-border-right(green);
+    }
+
+    .#{$prefix}border-right-teal {
+        @include base-border-right(teal);
+    }
+
+    .#{$prefix}border-right-cyan {
+        @include base-border-right(cyan);
+    }
+
+    .#{$prefix}border-right-white {
+        @include base-border-right(white);
+    }
+
+    .#{$prefix}border-right-gray {
+        @include base-border-right(gray);
+    }
+
+    .#{$prefix}border-right-gray-dark {
+        @include base-border-right(gray-dark);
+    }
+
+    .#{$prefix}border-right-primary {
+        @include base-border-right(primary);
+    }
+
+    .#{$prefix}border-right-secondary {
+        @include base-border-right(secondary);
+    }
+
+    .#{$prefix}border-right-success {
+        @include base-border-right(success);
+    }
+
+    .#{$prefix}border-right-info {
+        @include base-border-right(info);
+    }
+
+    .#{$prefix}border-right-warning {
+        @include base-border-right(warning);
+    }
+
+    .#{$prefix}border-right-danger {
+        @include base-border-right(danger);
+    }
+
+    .#{$prefix}border-right-light {
+        @include base-border-right(light);
+    }
+
+    .#{$prefix}border-right-dark {
+        @include base-border-right(dark);
+    }
+
+    .#{$prefix}border-right-transparent {
+        @include base-border-right(transparent);
+    }
+
+
+    /* Border bottom */
+
+    .#{$prefix}border-bottom-blue {
+        @include base-border-bottom(blue);
+    }
+
+    .#{$prefix}border-bottom-indigo {
+        @include base-border-bottom(indigo);
+    }
+
+    .#{$prefix}border-bottom-purple {
+        @include base-border-bottom(purple);
+    }
+
+    .#{$prefix}border-bottom-pink {
+        @include base-border-bottom(pink);
+    }
+
+    .#{$prefix}border-bottom-red {
+        @include base-border-bottom(red);
+    }
+
+    .#{$prefix}border-bottom-orange {
+        @include base-border-bottom(orange);
+    }
+
+    .#{$prefix}border-bottom-yellow {
+        @include base-border-bottom(yellow);
+    }
+
+    .#{$prefix}border-bottom-green {
+        @include base-border-bottom(green);
+    }
+
+    .#{$prefix}border-bottom-teal {
+        @include base-border-bottom(teal);
+    }
+
+    .#{$prefix}border-bottom-cyan {
+        @include base-border-bottom(cyan);
+    }
+
+    .#{$prefix}border-bottom-white {
+        @include base-border-bottom(white);
+    }
+
+    .#{$prefix}border-bottom-gray {
+        @include base-border-bottom(gray);
+    }
+
+    .#{$prefix}border-bottom-gray-dark {
+        @include base-border-bottom(gray-dark);
+    }
+
+    .#{$prefix}border-bottom-primary {
+        @include base-border-bottom(primary);
+    }
+
+    .#{$prefix}border-bottom-secondary {
+        @include base-border-bottom(secondary);
+    }
+
+    .#{$prefix}border-bottom-success {
+        @include base-border-bottom(success);
+    }
+
+    .#{$prefix}border-bottom-info {
+        @include base-border-bottom(info);
+    }
+
+    .#{$prefix}border-bottom-warning {
+        @include base-border-bottom(warning);
+    }
+
+    .#{$prefix}border-bottom-danger {
+        @include base-border-bottom(danger);
+    }
+
+    .#{$prefix}border-bottom-light {
+        @include base-border-bottom(light);
+    }
+
+    .#{$prefix}border-bottom-dark {
+        @include base-border-bottom(dark);
+    }
+
+    .#{$prefix}border-bottom-transparent {
+        @include base-border-bottom(transparent);
+    }
+
+
+    /* Border left */
+
+    .#{$prefix}border-left-blue {
+        @include base-border-left(blue);
+    }
+
+    .#{$prefix}border-left-indigo {
+        @include base-border-left(indigo);
+    }
+
+    .#{$prefix}border-left-purple {
+        @include base-border-left(purple);
+    }
+
+    .#{$prefix}border-left-pink {
+        @include base-border-left(pink);
+    }
+
+    .#{$prefix}border-left-red {
+        @include base-border-left(red);
+    }
+
+    .#{$prefix}border-left-orange {
+        @include base-border-left(orange);
+    }
+
+    .#{$prefix}border-left-yellow {
+        @include base-border-left(yellow);
+    }
+
+    .#{$prefix}border-left-green {
+        @include base-border-left(green);
+    }
+
+    .#{$prefix}border-left-teal {
+        @include base-border-left(teal);
+    }
+
+    .#{$prefix}border-left-cyan {
+        @include base-border-left(cyan);
+    }
+
+    .#{$prefix}border-left-white {
+        @include base-border-left(white);
+    }
+
+    .#{$prefix}border-left-gray {
+        @include base-border-left(gray);
+    }
+
+    .#{$prefix}border-left-gray-dark {
+        @include base-border-left(gray-dark);
+    }
+
+    .#{$prefix}border-left-primary {
+        @include base-border-left(primary);
+    }
+
+    .#{$prefix}border-left-secondary {
+        @include base-border-left(secondary);
+    }
+
+    .#{$prefix}border-left-success {
+        @include base-border-left(success);
+    }
+
+    .#{$prefix}border-left-info {
+        @include base-border-left(info);
+    }
+
+    .#{$prefix}border-left-warning {
+        @include base-border-left(warning);
+    }
+
+    .#{$prefix}border-left-danger {
+        @include base-border-left(danger);
+    }
+
+    .#{$prefix}border-left-light {
+        @include base-border-left(light);
+    }
+
+    .#{$prefix}border-left-dark {
+        @include base-border-left(dark);
+    }
+
+    .#{$prefix}border-left-transparent {
+        @include base-border-left(transparent);
+    }
+
+     /* Border bottom  & hover*/
+
+     .#{$prefix}border-bottom-blue-hover {
+        @include base-border-bottom-hover(blue);
+    }
+
+    .#{$prefix}border-bottom-indigo-hover {
+        @include base-border-bottom-hover(indigo);
+    }
+
+    .#{$prefix}border-bottom-purple-hover {
+        @include base-border-bottom-hover(purple);
+    }
+
+    .#{$prefix}border-bottom-pink-hover {
+        @include base-border-bottom-hover(pink);
+    }
+
+    .#{$prefix}border-bottom-red-hover {
+        @include base-border-bottom-hover(red);
+    }
+
+    .#{$prefix}border-bottom-orange-hover {
+        @include base-border-bottom-hover(orange);
+    }
+
+    .#{$prefix}border-bottom-yellow-hover {
+        @include base-border-bottom-hover(yellow);
+    }
+
+    .#{$prefix}border-bottom-green-hover {
+        @include base-border-bottom-hover(green);
+    }
+
+    .#{$prefix}border-bottom-teal-hover {
+        @include base-border-bottom-hover(teal);
+    }
+
+    .#{$prefix}border-bottom-cyan-hover {
+        @include base-border-bottom-hover(cyan);
+    }
+
+    .#{$prefix}border-bottom-white-hover {
+        @include base-border-bottom-hover(white);
+    }
+
+    .#{$prefix}border-bottom-gray-hover {
+        @include base-border-bottom-hover(gray);
+    }
+
+    .#{$prefix}border-bottom-gray-dark-hover {
+        @include base-border-bottom-hover(gray-dark);
+    }
+
+    .#{$prefix}border-bottom-primary-hover {
+        @include base-border-bottom-hover(primary);
+    }
+
+    .#{$prefix}border-bottom-secondary-hover {
+        @include base-border-bottom-hover(secondary);
+    }
+
+    .#{$prefix}border-bottom-success-hover {
+        @include base-border-bottom-hover(success);
+    }
+
+    .#{$prefix}border-bottom-info-hover {
+        @include base-border-bottom-hover(info);
+    }
+
+    .#{$prefix}border-bottom-warning-hover {
+        @include base-border-bottom-hover(warning);
+    }
+
+    .#{$prefix}border-bottom-danger-hover {
+        @include base-border-bottom-hover(danger);
+    }
+
+    .#{$prefix}border-bottom-light-hover {
+        @include base-border-bottom-hover(light);
+    }
+
+    .#{$prefix}border-bottom-dark-hover {
+        @include base-border-bottom-hover(dark);
+    }
+
+    .#{$prefix}border-bottom-transparent-hover {
+        @include base-border-bottom-hover(transparent);
+    }
+
+}
+
+@include prefix-borders;

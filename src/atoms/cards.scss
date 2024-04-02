@@ -15,69 +15,67 @@
 }
 
 @mixin prefix-cards {
-
-    
-    .#{$prefix}success-card {
+    .#{$prefix}card-success {
         @include base-card;
         @include base-border-card(solid, var(--success));
     }
     
-    .#{$prefix}info-card {
+    .#{$prefix}card-info {
         @include base-card;
         @include base-border-card(solid, var(--info));
     }
     
-    .#{$prefix}warning-card {
+    .#{$prefix}card-warning {
         @include base-card;
         @include base-border-card(solid, var(--warning));
     }
     
-    .#{$prefix}danger-card {
+    .#{$prefix}card-danger {
         @include base-card;
         @include base-border-card(solid, var(--danger));
     }
     
-    .#{$prefix}dark-card {
+    .#{$prefix}card-dark {
         @include base-card;
         @include base-border-card(solid, var(--dark));
     }
     
-    .#{$prefix}success-dot-card {
+    .#{$prefix}card-dot-success {
         @include base-card;
         @include base-border-card(dashed, var(--success));
     }
     
-    .#{$prefix}info-dot-card {
+    .#{$prefix}card-dot-info {
         @include base-card;
         @include base-border-card(dashed, var(--info));
     }
     
-    .#{$prefix}warning-dot-card {
+    .#{$prefix}card-dot-warning {
         @include base-card;
         @include base-border-card(dashed, var(--warning));
     }
     
-    .#{$prefix}danger-dot-card {
+    .#{$prefix}card-dot-danger {
         @include base-card;
         @include base-border-card(dashed, var(--danger));
     }
     
-    .#{$prefix}dark-dot-card {
+    .#{$prefix}card-dot-dark {
         @include base-card;
         @include base-border-card(dashed, var(--dark));
     }
     
-    .#{$prefix}shadow-card-s {
+    .#{$prefix}card-shadow-s {
         @include base-card;
         @extend .#{$prefix}shadow-s;
     }
     
-    .#{$prefix}shadow-card-m {
+    .#{$prefix}card-shadow-m {
         @include base-card;
         @extend .#{$prefix}shadow-m;
     }
     
-    .#{$prefix}shadow-card-l {
+    .#{$prefix}card-shadow-l {
         @include base-card;
         @extend .#{$prefix}shadow-l;
     }

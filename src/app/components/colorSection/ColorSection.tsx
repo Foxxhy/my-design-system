@@ -1,15 +1,10 @@
-import { addPrefixer } from '../../providers/addPrefixer';
-// import './color.css';
-
-// className={`${addPrefixer('main-title')}`}
-
 const ColorItem = (props: any) => {
     const { text, color } = props;
 
     return (
-        <div style={{ width: '230px'}} className={`${addPrefixer('display-flex')} ${addPrefixer('direction-row')} ${addPrefixer('gap-16')} ${addPrefixer('align-center')}`}>
-            <span className={`${color}-background ${addPrefixer('width-40')} ${addPrefixer('height-40')} ${addPrefixer('radius-10')}`}></span>
-            <span className={`${addPrefixer('label-text')}`}>{text}</span>
+        <div style={{ width: '230px' }} className="f-flex f-flex-row f-gap-16 f-align-center">
+            <span className={`f-background-${color} f-width-40 f-height-40 f-radius-10`}></span>
+            <span className="f-text-label">{text}</span>
         </div>
     );
 };
@@ -17,7 +12,7 @@ const ColorItem = (props: any) => {
 const ColorSection = () => {
     return (
         <div>
-            <div className={`${addPrefixer('display-flex')} ${addPrefixer('direction-row')} ${addPrefixer('gap-16')} ${addPrefixer('align-center')} ${addPrefixer('flex-wrap')}`}>
+            <div className="f-flex f-flex-row f-gap-16 f-align-center f-flex-wrap">
                 <ColorItem text="white - #fff" color="white" />
                 <ColorItem text="light - #f8f9fa" color="light" />
                 <ColorItem text="gray - #6c757d" color="gray" />

@@ -13,27 +13,27 @@
 }
 
 @mixin prefix-titles { 
-    .#{$prefix}main-title {
+    .#{$prefix}title-main {
         @include base-title(--text-size-xxl, --weight-bold, --primary);
     }
     
-    .#{$prefix}section-title {
+    .#{$prefix}title-section {
         @include base-title(--text-size-xl, --weight-bold, --primary);
     }
     
-    .#{$prefix}sub-section-title {
+    .#{$prefix}title-sub {
         @include base-title(--text-size-l, --weight-bold, --primary);
     }
     
-    .#{$prefix}main-subtitle {
+    .#{$prefix}subtitle-main {
         @include base-subtitle(--text-size-l, --weight-bold, --secondary);
     }
     
-    .#{$prefix}section-subtitle {
+    .#{$prefix}subtitle-section {
         @include base-subtitle(--text-size-m, --weight-bold, --secondary);
     }
     
-    .#{$prefix}sub-section-subtitle {
+    .#{$prefix}subtitle-sub {
         @include base-subtitle(--text-size-m, --weight-normal, --secondary);
     }
     

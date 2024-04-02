@@ -5,10 +5,10 @@ const ButtonSection = () => {
 
     return (
         <div>
-            <div className="button-container">
-                <button className="success-button">{button.default}</button>
-                <button className="disable-button">{button.default}</button>
-                <button className="success-outline-button">{button.outline}</button>
+            <div className="f-flex f-flex-row f-flex-wrap f-gap-6 f-margin-bottom-16">
+                <button className="f-button-success">{button.default}</button>
+                <button className="f-button-outline-success">{button.outline}</button>
+                <button className="f-button-disable">{button.outline}</button>
             </div>
         </div>
     )

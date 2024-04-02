@@ -1,3 +1,3 @@
 export const configApp: any = {
-    prefix: '',
+    prefix: 'f-',
 }
