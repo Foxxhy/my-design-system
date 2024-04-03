@@ -1,1 +1,0 @@
-export const DS_CLASSES = '../../../styles.css'

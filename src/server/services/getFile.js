@@ -1,25 +1,16 @@
 import fs from 'fs';
-import logger from 'winston';
-// const cssFilePath = '../../styles.css';
-const cssFilePath = '../../theme.css';
-
-fs.readFile(cssFilePath, 'utf8', (err, data) => {
-    if (err) {
-        console.error('Une erreur s\'est produite lors de la lecture du fichier CSS :', err);
-        return;
-    }
-
-    // Affichage du contenu du fichier CSS
-    console.log('Contenu du fichier CSS :', data);
-});
+import { logger } from './index.js';
+import { ERROR_PATH } from '../configs/index.js';
 
 export const getFile = (path) => {
-    return fs.readFile(path, 'utf8', (error, data) => {
+    let content = fs.readFileSync(path, 'utf8', (error, data) => {
         if (error) {
-            logger.log('error', "127.0.0.1 - there's no place like home");
+            logger.log('error', ERROR_PATH);
             return;
         }
 
-        return data;
+        content = data;
     });
+    
+    return content;
 };

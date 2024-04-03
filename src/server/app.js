@@ -1,27 +1,44 @@
-import validateCss from 'css-validator';
-import fs from 'fs';
-import assert from 'assert';
+import {
+	PROCESS_START,
+	PROCESS_THEME,
+	PROCESS_CLASSES,
+	PROCESS_END,
+} from "./configs/index.js";
+import {
+	THEME_ANIMATION,
+	THEME_BREAKPOINTS,
+	THEME_COLORS,
+	THEME_ELEVATIONS,
+	THEME_FONTS,
+	THEME_SHADOWS,
+	THEME_SIZES,
+	THEME_SPACES,
+	THEME_WEIGHTS,
+	DS_CLASSES,
+} from "./configs/index.js";
+import {
+	getFile,
+	validationCSS
+} from "./services/index.js";
 
-// const cssFilePath = '../../styles.css';
-const cssFilePath = '../../theme.css';
+const app = () => {
+	console.log(PROCESS_START);
 
-fs.readFile(cssFilePath, 'utf8', (err, data) => {
-  if (err) {
-    console.error('Une erreur s\'est produite lors de la lecture du fichier CSS :', err);
-    return;
-  }
-  
-  // Affichage du contenu du fichier CSS
-  console.log('Contenu du fichier CSS :', data);
-});
+	console.log(PROCESS_THEME);
+	validationCSS(THEME_ANIMATION, getFile(THEME_ANIMATION));
+	validationCSS(THEME_BREAKPOINTS, getFile(THEME_BREAKPOINTS));
+	validationCSS(THEME_COLORS, getFile(THEME_COLORS));
+	validationCSS(THEME_ELEVATIONS, getFile(THEME_ELEVATIONS));
+	validationCSS(THEME_FONTS, getFile(THEME_FONTS));
+	validationCSS(THEME_SHADOWS, getFile(THEME_SHADOWS));
+	validationCSS(THEME_SIZES, getFile(THEME_SIZES));
+	validationCSS(THEME_SPACES, getFile(THEME_SPACES));
+	validationCSS(THEME_WEIGHTS, getFile(THEME_WEIGHTS));
 
+	console.log(PROCESS_CLASSES);
+	validationCSS(DS_CLASSES, getFile(DS_CLASSES));
 
+	console.log(PROCESS_END);
+};
 
-
-
-validateCss({text: 'a { color: blue; }'}, function (err, data) {
-  assert.strictEqual(data.validity, true);
-  assert.deepEqual(data.errors, []);
-  assert.deepEqual(data.warnings, []);
-  console.log('test');
-});
+app();

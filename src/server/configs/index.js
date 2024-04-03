@@ -1,3 +1,3 @@
-export * from './config.message';
-export * from './config.themes';
-export * from './config.ds';
+export * from './config.message.js';
+export * from './config.themes.js';
+export * from './config.classes.js';
