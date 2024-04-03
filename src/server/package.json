@@ -1,7 +1,7 @@
 {
     "type": "module",
     "scripts": {
-        "start": "node app"
+        "dev": "node app"
     },
     "dependencies": {
         "css-validator": "^0.11.0",

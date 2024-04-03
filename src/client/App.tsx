@@ -9,6 +9,8 @@ import BadgeSection from './components/badgeSection/BadgeSection';
 import CardSection from './components/cardSection/CardSection';
 import ElevationSection from './components/elevationSection/ElevationSection';
 import ModalSection from './components/modalSection/ModalSection';
+import IconSection from './components/iconSection/IconSection';
+import FormSection from './components/formSection/FormSection';
 
 const App = () => {
 	return (
@@ -43,6 +45,12 @@ const App = () => {
 				</Section>
 				<Section title={"Modal & Dropdown"}>
 					<ModalSection />
+				</Section>
+				<Section title={"Icons"}>
+					<IconSection />
+				</Section>
+				<Section title={"Forms"}>
+					<FormSection />
 				</Section>
 			</main>
 		</>
