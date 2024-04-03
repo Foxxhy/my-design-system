@@ -8,7 +8,7 @@ export default ({ mode }: { mode: any}) => {
     base: process.env.VITE_ENVIRONNEMENT === 'prod' ? '/my-design-system' : '',
     plugins: [react()],
     build: {
-      outDir: './docs'
+      outDir: '../../docs'
     }
   })
 }

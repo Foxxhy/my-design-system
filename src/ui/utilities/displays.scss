@@ -1,9 +1,6 @@
 @mixin base-display($display-value) {
     display: $display-value;
 }
-@mixin base-flex($flex-value) {
-    flex: $flex-value;
-}
 
 @mixin base-flex-wrap($wrap-value) {
     flex-wrap: $wrap-value;
@@ -46,16 +43,12 @@
         @include base-display(none);
     }
 
-    .#{$prefix}flex-center {
-        @include base-flex(center);
-    }
-
     .#{$prefix}flex-wrap {
         @include base-flex-wrap(wrap);
     }
 
-    .#{$prefix}flex-no-wrap {
-        @include base-flex-wrap(no-wrap);
+    .#{$prefix}flex-nowrap {
+        @include base-flex-wrap(nowrap);
     }
 
     .#{$prefix}flex-row {

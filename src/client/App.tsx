@@ -1,3 +1,4 @@
+import React from 'react';
 import Section from './components/common/Section';
 import GlobalSection from './components/globalSection/GlobalSection';
 import ColorSection from './components/colorSection/ColorSection';
