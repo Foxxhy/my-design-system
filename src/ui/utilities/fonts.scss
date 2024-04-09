@@ -1,11 +1,5 @@
-@mixin base-text($font-family, $font-size, $color, $font-weight) {
-    font-family: var($font-family);
-    font-size: var($font-size);
-    color: var($color);
-
-    @if $font-weight {
-        font-weight: var(--#{$font-weight});
-    }
+@mixin base-transform($transform) {
+    text-transform: $transform;
 }
 
 @mixin prefix-fonts {
@@ -79,6 +73,22 @@
 
     .#{$prefix}style-through {
         text-decoration: line-through;
+    }
+
+    .#{$prefix}transform-capitalize {
+        @include base-transform(capitalize);
+    }
+
+    .#{$prefix}transform-uppercase {
+        @include base-transform(uppercase);
+    }
+
+    .#{$prefix}transform-lowercase {
+        @include base-transform(lowercase);
+    }
+
+    .#{$prefix}transform-none {
+        @include base-transform(none);
     }
 }
 

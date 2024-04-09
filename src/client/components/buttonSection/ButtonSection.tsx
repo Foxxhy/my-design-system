@@ -1,3 +1,4 @@
+import React from "react";
 import { configExample } from "../../config";
 
 const ButtonSection = () => {

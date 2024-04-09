@@ -2687,6 +2687,22 @@
   text-decoration: line-through;
 }
 
+.f-transform-capitalize {
+  text-transform: capitalize;
+}
+
+.f-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.f-transform-lowercase {
+  text-transform: lowercase;
+}
+
+.f-transform-none {
+  text-transform: none;
+}
+
 .f-shadow-s, .f-card-shadow-s {
   box-shadow: var(--box-shadow-s);
 }
@@ -2781,77 +2797,84 @@
 .f-button-success {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--success);
   border: solid 1px var(--success);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-info {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--info);
   border: solid 1px var(--info);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-warning {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--warning);
   border: solid 1px var(--warning);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-danger {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--danger);
   border: solid 1px var(--danger);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-light {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--dark);
   background-color: var(--light);
   border: solid 1px var(--light);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-dark {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--light);
   background-color: var(--dark);
   border: solid 1px var(--dark);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-disable {
   font-family: var(--font-secondary);
   font-size: var(--text-size-m);
+  text-transform: uppercase;
   color: var(--light);
   background-color: var(--gray);
   border: solid 1px var(--gray);
-  padding: var(--space-8) var(--space-14);
-  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
   cursor: not-allowed;
 }
@@ -2859,77 +2882,84 @@
 .f-button-outline-success {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--success);
   background-color: var(--white);
   border: 1px solid var(--success);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-outline-info {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--info);
   background-color: var(--white);
   border: 1px solid var(--info);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-outline-warning {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--warning);
   background-color: var(--white);
   border: 1px solid var(--warning);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-outline-danger {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--danger);
   background-color: var(--white);
   border: 1px solid var(--danger);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-outline-light {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--dark);
   background-color: var(--white);
   border: 1px solid var(--dark);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-outline-dark {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--dark);
   background-color: var(--white);
   border: 1px solid var(--dark);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
 }
 
 .f-button-outline-gray {
   font-family: var(--font-secondary);
   font-size: var(--size-l);
+  text-transform: uppercase;
   color: var(--dark);
   background-color: var(--white);
   border: 1px solid var(--dark);
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--space-6);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--space-4);
   cursor: pointer;
   cursor: not-allowed;
 }
@@ -2979,10 +3009,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--dark);
   background-color: var(--transparent);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 
@@ -2990,10 +3019,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--white);
   background-color: var(--success);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 
@@ -3001,10 +3029,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--white);
   background-color: var(--info);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 
@@ -3012,10 +3039,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--dark);
   background-color: var(--warning);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 
@@ -3023,10 +3049,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--white);
   background-color: var(--danger);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 
@@ -3034,10 +3059,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--white);
   background-color: var(--primary);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 
@@ -3045,10 +3069,9 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
-  font-weight: var(--weight-bold);
   color: var(--white);
   background-color: var(--secondary);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-8);
   border-radius: var(--space-4);
 }
 

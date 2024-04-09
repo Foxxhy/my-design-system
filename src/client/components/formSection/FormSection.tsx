@@ -4,11 +4,8 @@ const FormSection = () => {
     const [isChecked, setIsChecked] = useState(false);
 
     const handleToggle = () => {
-        console.log('is call');
         setIsChecked(!isChecked);
     };
-
-    console.log('my toggle', isChecked);
 
     return (
         <div className="f-flex f-flex-row f-flex-wrap f-gap-6">

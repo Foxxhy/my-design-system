@@ -2,12 +2,11 @@
     display: inline-block;
     font-family: var(--font-secondary);
     font-size: var(--text-size-s);
-    font-weight: var(--weight-bold);
 
     color: $color;
     background-color: $background-color;
 
-    padding: var(--space-4) var(--space-6);
+    padding: var(--space-8);
     border-radius: var(--space-4);
 }
 
