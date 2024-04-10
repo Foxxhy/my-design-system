@@ -1,66 +1,116 @@
-# Design System
-Ce document contient les directives et les conventions pour utiliser le Design System dans vos projets. Le Design System fournit une série de variables, de classes et de composants réutilisables pour garantir la cohérence visuelle et la facilité de développement.
+#  @Foxxhy -My Design System
+__Version: 0.0.1__
+! Under construction !
 
-Variables Globales
-Les variables globales sont définies au niveau de la racine et peuvent être utilisées dans tout le système de conception pour assurer la cohérence visuelle. Elles incluent des variables pour les couleurs, les espaces, les polices, etc.
+![image](doc/background.jpg)
 
-Exemple :
-```css
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --space-xs: 8px;
-    --space-s: 16px;
-    /* Autres variables globales */
-}
+## Principle
+
+This Design System project is lightweight and flexible. It is based on the principle of composition with an approach that combines elements of Tailwind and Bootstrap. My Design System offers CSS utility classes, atoms, and web components for more complex components.
+
+## Technologies & Code Quality
+
+This project is built with SASS and the Lit library for web components. All CSS is valid according to the W3C standards.
+
+## Installation
+
+1) Using your favorite terminal:
+
+```
+    npm install Foxxhy-my-design-system
 ```
 
-## Consommation des Variables
-Les variables globales peuvent être utilisées dans les classes SASS pour appliquer facilement des styles cohérents à vos éléments HTML.
-
-Exemple :
-```scss
-.button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: var(--space-s);
-    border-radius: var(--space-xs);
-    /* Autres styles */
-}
+2) Using your preferred framework, import the CSS classes:
+```jsx
+    import '../../normalize.css'; /* Reset les CSS natif */
+    import '../../styles.css'; /* Importe à la fois le thème et les classes CSS */
 ```
 
-## Atomes
-Les atomes représentent les éléments de base du Design System, tels que les couleurs, les espaces, les badges, les boutons, etc. Ces éléments peuvent être combinés pour créer des molécules et des organismes plus complexes.
+3) An example of importing web components:
+```jsx
+    import { FToggle } from '../../../../index';
+```
 
-### Background
-Les arrières-plans fournissent des classes pour définir des arrière-plans colorés.
+## Best Practices
 
-### Badges
-Les badges sont des composants utilisés pour afficher des informations, généralement sous forme de texte court.
+### Theme Customization
+It is recommended to override CSS variables directly from your project. This will update all related variables (except for web components).
 
-### Button
-Les boutons sont des éléments interactifs utilisés pour déclencher des actions lorsque l'utilisateur clique dessus.
+### Avoiding CSS Conflicts
+To avoid conflicts between CSS classes and web components, library classes start with -f and web components start with F.
 
-### Cards
-Les cartes sont des conteneurs rectangulaires utilisés pour afficher des informations liées, souvent sous forme de blocs de contenu.
+### Auto-completion Plugin
+For VS Code enthusiasts, it is recommended to use "IntelliSense for CSS class names in HTML".
 
-### Grid
-La grille fournit des classes pour créer des mises en page réactives et adaptatives.
+## Usage
 
-### Link
-Les liens sont des éléments cliquables permettant à l'utilisateur de naviguer vers d'autres pages ou sections du site.
+### Utility Classes
 
-### Separator
-Les séparateurs sont des éléments utilisés pour diviser visuellement le contenu, généralement sous forme de lignes horizontales ou verticales.
+Example code for using simple styles:
 
-### Shadow
-Les ombres sont des effets visuels appliqués aux éléments pour leur donner de la profondeur et de la dimension.
+```jsx
+    <div className="f-flex f-flex-row f-flex-wrap f-gap-6">
+        my html...
+    </div>
+```
 
-### Text
-Les styles de texte fournissent des classes pour définir la taille, la couleur, la police, etc., du texte.
+### Atoms
 
-### Title
-Les titres sont des éléments utilisés pour mettre en évidence et organiser le contenu, généralement sous forme de titres et de sous-titres.
+Example code for using atoms:
 
-## Molécules
-Les molécules combinent plusieurs atomes pour former des éléments plus complexes et fonctionnels. Les molécules disponibles dans ce Design System sont Collapse, Modal et Dialog.
+```jsx
+    <button className="f-button-success">My Success Button</button>
+    <button className="f-button-outline-success">My Outline Button</button>
+```
+
+### Molecules
+
+Example using slightly more complex CSS classes and React:
+
+```jsx
+    import React from 'react';
+    import { useState } from 'react';
+
+    const Modal = () => {
+        const [modal, setModal] = useState(false);
+
+        return (
+            <>
+                <div className={modal ? 'f-modal-show' : 'f-modal-hide'} >
+                    Click on cta to close modal
+                    <button className="f-button-danger" onClick={() => setModal(false)} >fermer</button>
+                </div>
+                <div className={(modal) ? 'f-cover-shadow' : ''} ></div>
+            </>
+        )
+    }
+```
+
+### Web Components
+
+The Design System offers web components based on [Lit](https://lit.dev/). Before importing it into your preferred framework, you may need to use a wrapper. Here's an example of implementation in ReactJS:
+
+```jsx
+    import React from 'react';
+    import { createComponent } from '@lit/react';
+    import { FIcon } from '../../../../index';
+
+    export const Icon = createComponent({
+        tagName: 'f-icon',
+        elementClass: FIcon,
+        react: React,
+    });
+
+    const IconContainer = () => {
+        return (
+            <div className='f-flex f-gap-10' >
+                <Icon name='anchor' />
+                <Icon name='facebook' />
+                <Icon name='linkedin' />
+            </div>
+        )
+    }
+```
+
+### Release Notes
+0.0.1 : Project Launch
