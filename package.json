@@ -5,30 +5,22 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dev:ds": "sass --watch main.scss:styles.css & vite",
-    "build": "tsc && vite build",
-    "build:ds": "sass --style=compressed main.scss styles.css",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev:ds": "sass --watch main.scss:styles.css & cd src/client && npm run dev",
+    "dev:icon": "cd src/ui/components/icons && npm run dev",
+    "dev:toggle": "cd src/ui/components/toggle && npm run dev",
+    "validation:ds": "cd src/server && npm run dev",
+    "build:ds": "sass --style=compressed main.scss styles.css & cd src/server && npm run dev && cd ../client && npm run build",
+    "build:icon": "cd src/ui/components/icons && npm run build",
+    "build:toggle": "cd src/ui/components/toggle && npm run build"
   },
   "dependencies": {
+    "css-validator": "^0.11.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "winston": "^3.13.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.28",
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.72.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "sass": "^1.72.0"
   },
   "description": "Ce document contient les directives et les conventions pour utiliser le Design System dans vos projets. Le Design System fournit une série de variables, de classes et de composants réutilisables pour garantir la cohérence visuelle et la facilité de développement.",
   "main": "index.js",

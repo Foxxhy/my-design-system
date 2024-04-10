@@ -1,0 +1,21 @@
+@mixin base-text($font-family, $font-size, $color, $font-weight) {
+    font-family: var($font-family);
+    font-size: var($font-size);
+    color: var($color);
+
+    @if $font-weight {
+        font-weight: var(--#{$font-weight});
+    }
+}
+
+@mixin prefix-texts {
+    .#{$prefix}text {
+        @include base-text(--font-primary, --text-size-m, --primary, null);
+    }
+
+    .#{$prefix}text-label {
+        @include base-text(--font-secondary, --text-size-, --secondary, weight-bold);
+    }
+}
+
+@include prefix-texts;
