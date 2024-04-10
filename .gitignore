@@ -42,7 +42,8 @@ build/Release
 node_modules/
 src/client/node_modules/
 src/server/node_modules/
-src/ui/icons/node_modules/
+src/ui/components/icons/node_modules/
+src/ui/components/toggle/node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)

@@ -1,5 +1,5 @@
 import React from 'react';
-import {createComponent} from '@lit/react';
+import { createComponent } from '@lit/react';
 // import { FIcon } from '../../../ui/icons/docs/icons';
 import { FIcon } from '../../../../index';
 
@@ -7,7 +7,7 @@ export const Icon = createComponent({
     tagName: 'f-icon',
     elementClass: FIcon,
     react: React,
-  });
+});
 
 const IconSection = () => {
     return (

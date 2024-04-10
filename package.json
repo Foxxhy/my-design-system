@@ -6,10 +6,12 @@
   "type": "module",
   "scripts": {
     "dev:ds": "sass --watch main.scss:styles.css & cd src/client && npm run dev",
-    "dev:icon": "cd src/ui/icons && npm run dev",
+    "dev:icon": "cd src/ui/components/icons && npm run dev",
+    "dev:toggle": "cd src/ui/components/toggle && npm run dev",
     "validation:ds": "cd src/server && npm run dev",
     "build:ds": "sass --style=compressed main.scss styles.css & cd src/server && npm run dev && cd ../client && npm run build",
-    "build:icon": "cd src/ui/icons && npm run build"
+    "build:icon": "cd src/ui/components/icons && npm run build",
+    "build:toggle": "cd src/ui/components/toggle && npm run build"
   },
   "dependencies": {
     "css-validator": "^0.11.0",
