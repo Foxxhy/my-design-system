@@ -1,7 +1,7 @@
 {
-  "name": "fr93562-design-system",
+  "name": "foxxhy-my-design-system",
   "private": false,
-  "author": "Fr93562",
+  "author": "Foxxhy",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -29,14 +29,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fr93562/my-design-system.git"
+    "url": "git+https://github.com/Foxxhy/my-design-system.git"
   },
   "keywords": [
     "design-system"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Fr93562/my-design-system/issues"
+    "url": "https://github.com/Foxxhy/my-design-system/issues"
   },
-  "homepage": "https://github.com/Fr93562/my-design-system#readme"
+  "homepage": "https://github.com/Foxxhy/my-design-system#readme"
 }
