@@ -1,5 +1,7 @@
 {
   "name": "toggle",
+  "main": "./docs/toggle.js",
+  "module": "./docs/toggle.js",
   "private": true,
   "version": "0.0.0",
   "type": "module",

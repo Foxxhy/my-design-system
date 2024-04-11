@@ -1,5 +1,7 @@
 {
   "name": "icons",
+  "main": "./docs/icons.js",
+  "module": "./docs/icons.js",
   "private": true,
   "version": "0.0.0",
   "type": "module",
