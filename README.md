@@ -22,13 +22,13 @@ This project is built with SASS and the Lit library for web components. All CSS 
 
 2) Using your preferred framework, import the CSS classes:
 ```jsx
-    import '../../normalize.css'; /* Reset les CSS natif */
-    import '../../styles.css'; /* Importe à la fois le thème et les classes CSS */
+    import 'foxxhy-my-design-system/normalize.css';  /* Reset les CSS natif */
+    import 'foxxhy-my-design-system/styles.css';  /* Importe à la fois le thème et les classes CSS */
 ```
 
 3) An example of importing web components:
 ```jsx
-    import { FToggle } from '../../../../index';
+    import { FIcon } from 'foxxhy-my-design-system';
 ```
 
 ## Best Practices
@@ -93,7 +93,7 @@ The Design System offers web components based on [Lit](https://lit.dev/). Before
 ```jsx
     import React from 'react';
     import { createComponent } from '@lit/react';
-    import { FIcon } from '../../../../index';
+    import { FIcon } from 'foxxhy-my-design-system';
 
     export const Icon = createComponent({
         tagName: 'f-icon',
@@ -112,5 +112,12 @@ The Design System offers web components based on [Lit](https://lit.dev/). Before
     }
 ```
 
+In case of TypeScript projets, it's necessary to declare a custom module:
+
+```tsx
+    declare module 'foxxhy-my-design-system';
+```
+
 ### Release Notes
+0.0.2 - 0.0.3 : Fix bugs and minors improvements
 0.0.1 : Project Launch
