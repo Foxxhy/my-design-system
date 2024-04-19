@@ -1,6 +1,5 @@
 #  @Foxxhy -My Design System
-__Version: 0.0.1__
-! Under construction !
+__Version: 0.0.5 : This Project is in Alpha.__
 
 ![image](doc/background.jpg)
 
@@ -118,6 +117,9 @@ In case of TypeScript projets, it's necessary to declare a custom module:
     declare module 'foxxhy-my-design-system';
 ```
 
-### Release Notes
-0.0.2 - 0.0.3 : Fix bugs and minors improvements
-0.0.1 : Project Launch
+### Releases Notes
+- 0.0.5 : Improve Button style, fix button css, text
+- 0.0.4 : Fix bugs on Webs Components
+- 0.0.3 : Fix bugs and minors improvements
+- 0.0.2: Fix bugs and minors improvements
+- 0.0.1 : Project Launch

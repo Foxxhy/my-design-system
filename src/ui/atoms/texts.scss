@@ -14,7 +14,7 @@
     }
 
     .#{$prefix}text-label {
-        @include base-text(--font-secondary, --text-size-, --secondary, weight-bold);
+        @include base-text(--font-secondary, --text-size-s, --secondary, weight-bold);
     }
 }
 

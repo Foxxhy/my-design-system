@@ -1,3 +1,4 @@
+
 @mixin base-button($font-family, $font-size, $color, $background-color, $border-color) {
     font-family: var($font-family);
     font-size: var($font-size);
@@ -30,12 +31,19 @@
     cursor: not-allowed;
 }
 
-@mixin base-hover($color) {
-    &:hover,
+@mixin base-hover {
+    &:hover {
+        transform: scale(1.1);
+        transition-property: transform;
+        transition-duration: var(--animation-m);
+    }
+}
+
+@mixin base-focus {
     &:focus {
-        opacity: 0.85;
-        color: var(--white);
-        transition: opacity var(--animation-m);
+        box-shadow: var(--box-shadow-m);
+        transition-property: box-shadow;
+        transition-duration: var(--animation-s);
     }
 }
 
@@ -59,14 +67,13 @@
     .#{$prefix}button-light {
         @include base-button(--font-secondary, --text-size-m, --dark, --light, --light);
     }
+
+    .#{$prefix}button-gray {
+        @include base-button(--font-secondary, --text-size-m, --light, --gray, --gray);
+    }
     
     .#{$prefix}button-dark {
         @include base-button(--font-secondary, --text-size-m, --light, --dark, --dark);
-    }
-
-    .#{$prefix}button-disable {
-        @include base-button(--font-secondary, --text-size-m, --light, --gray, --gray);
-        @include base-disable;
     }
     
     .#{$prefix}button-outline-success {
@@ -94,42 +101,21 @@
     }
 
     .#{$prefix}button-outline-gray {
-        @include base-outline-button(--dark);
+        @include base-outline-button(--gray);
+    }
+    
+    .#{$prefix}effect-hover {
+        @include base-hover();
+    }
+
+    .#{$prefix}effect-focus {
+        @include base-focus();
+    }
+
+    .#{$prefix}effect-disable {
         @include base-disable;
     }
-    
-    .#{$prefix}button-success-hover {
-        @include base-hover(--success);
-    }
-    
-    .#{$prefix}button-info-hover {
-        @include base-hover(--info);
-    }
-    
-    .#{$prefix}button-warning-hover {
-        @include base-hover(--warning);
-    }
-    
-    .#{$prefix}button-danger-hover {
-        @include base-hover(--danger);
-    }
-    
-    .#{$prefix}button-light-hover {
-        @include base-hover(--light);
-    }
-    
-    .#{$prefix}button-dark-hover {
-        @include base-hover(--dark);
-    }
-    
-    .#{$prefix}button-outline-hover {
-    
-        &:hover,
-        &:focus {
-            border-color: var(--transparent);
-            transition: border-color var(--animation-m);
-        }
-    }
+
 }
 
 @include prefix-buttons;

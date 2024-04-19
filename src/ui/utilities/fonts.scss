@@ -11,6 +11,42 @@
         font-family: var(--font-secondary);
     }
 
+    .#{$prefix}size-xs {
+        font-family: var(--text-size-xs);
+    }
+
+    .#{$prefix}size-m {
+        font-family: var(--text-size-m);
+    }
+
+    .#{$prefix}size-l {
+        font-family: var(--text-size-l);
+    }
+
+    .#{$prefix}size-xl {
+        font-family: var(--text-size-xl);
+    }
+
+    .#{$prefix}size-xxl {
+        font-family: var(--text-size-xxl);
+    }
+
+    .#{$prefix}align-start {
+        text-align: start;
+    }
+
+    .#{$prefix}align-center {
+        text-align: center;
+    }
+
+    .#{$prefix}align-end {
+        text-align: end;
+    }
+
+    .#{$prefix}align-justify {
+        text-align: justify;
+    }
+
     .#{$prefix}weight-thin {
         font-weight: var(--weight-thin);
     }
