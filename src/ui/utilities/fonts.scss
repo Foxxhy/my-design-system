@@ -15,6 +15,10 @@
         font-family: var(--text-size-xs);
     }
 
+    .#{$prefix}size-s {
+        font-family: var(--text-size-s);
+    }
+
     .#{$prefix}size-m {
         font-family: var(--text-size-m);
     }

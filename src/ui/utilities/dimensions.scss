@@ -15,7 +15,7 @@
         @include base-height(100%);
     }
 
-    @for $i from 0 to 25 {
+    @for $i from 0 to 26 {
         .#{$prefix}width-#{$i * 2} {
             @include base-width(var(--space-#{$i * 2}));
         }

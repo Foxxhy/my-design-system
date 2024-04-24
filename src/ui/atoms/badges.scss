@@ -10,6 +10,19 @@
     border-radius: var(--space-4);
 }
 
+@mixin base-badge-outline($border-color) {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: var(--text-size-s);
+
+    color: var(--dark);
+    border: 1px solid $border-color;
+    background-color: var(--white);
+
+    padding: var(--space-8);
+    border-radius: var(--space-4);
+}
+
 @mixin prefix-badges {
     .#{$prefix}badge-dark {
         @include base-badge(var(--transparent), var(--dark));
@@ -37,6 +50,34 @@
     
     .#{$prefix}badge-secondary {
         @include base-badge(var(--secondary), var(--white));
+    }
+
+    .#{$prefix}badge-outline-dark {
+        @include base-badge-outline(var(--dark));
+    }
+    
+    .#{$prefix}badge-outline-success {
+        @include base-badge-outline(var(--success));
+    }
+    
+    .#{$prefix}badge-outline-info {
+        @include base-badge-outline(var(--info));
+    }
+    
+    .#{$prefix}badge-outline-warning {
+        @include base-badge-outline(var(--warning));
+    }
+    
+    .#{$prefix}badge-outline-danger {
+        @include base-badge-outline(var(--danger));
+    }
+    
+    .#{$prefix}badge-outline-primary {
+        @include base-badge-outline(var(--primary));
+    }
+    
+    .#{$prefix}badge-outline-secondary {
+        @include base-badge-outline(var(--secondary));
     }
 }
 

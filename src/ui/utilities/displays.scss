@@ -59,6 +59,10 @@
         @include base-flex-direction(column);
     }
 
+    .#{$prefix}flex-column-reverse {
+        @include base-flex-direction(column-reverse);
+    }
+
     .#{$prefix}flex-row-reverse {
         @include base-flex-direction(row-reverse);
     }
@@ -99,8 +103,8 @@
         @include base-justify-content(space-evenly);
     }
 
-    @for $i from 0 to 24 {
-        .#{$prefix}gap-#{$i} {
+    @for $i from 0 to 21 {
+        .#{$prefix}gap-#{$i * 2} {
             @include base-flex-gap(var(--space-#{$i * 2}));
         }
     }
