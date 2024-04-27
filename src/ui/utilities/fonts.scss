@@ -12,27 +12,27 @@
     }
 
     .#{$prefix}size-xs {
-        font-family: var(--text-size-xs);
+        font-size: var(--text-size-xs);
     }
 
     .#{$prefix}size-s {
-        font-family: var(--text-size-s);
+        font-size: var(--text-size-s);
     }
 
     .#{$prefix}size-m {
-        font-family: var(--text-size-m);
+        font-size: var(--text-size-m);
     }
 
     .#{$prefix}size-l {
-        font-family: var(--text-size-l);
+        font-size: var(--text-size-l);
     }
 
     .#{$prefix}size-xl {
-        font-family: var(--text-size-xl);
+        font-size: var(--text-size-xl);
     }
 
     .#{$prefix}size-xxl {
-        font-family: var(--text-size-xxl);
+        font-size: var(--text-size-xxl);
     }
 
     .#{$prefix}align-start {

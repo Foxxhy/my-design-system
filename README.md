@@ -1,5 +1,5 @@
 #  @Foxxhy -My Design System
-__Version: 0.0.5 : This Project is in Alpha.__
+__Version: 0.0.7 : This Project is in Alpha.__
 
 ![image](doc/background.jpg)
 
@@ -118,6 +118,8 @@ In case of TypeScript projets, it's necessary to declare a custom module:
 ```
 
 ### Releases Notes
+- 0.0.7 : Fix bugs
+- 0.0.6 : Fix bugs
 - 0.0.5 : Improve Button style, fix button css, text
 - 0.0.4 : Fix bugs on Webs Components
 - 0.0.3 : Fix bugs and minors improvements
