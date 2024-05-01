@@ -1,5 +1,5 @@
 #  @Foxxhy -My Design System
-__Version: 0.0.7 : This Project is in Alpha.__
+__Version: 0.1.0 : This Project is in Beta..__
 
 ![image](doc/background.jpg)
 
@@ -29,6 +29,10 @@ This project is built with SASS and the Lit library for web components. All CSS 
 ```jsx
     import { FIcon } from 'foxxhy-my-design-system';
 ```
+
+## Storybook
+
+(lien vers le storybook)[https://my-storybook-c29gds87u-foxxhys-projects.vercel.app/?path=/docs/configure-your-project--docs]
 
 ## Best Practices
 
