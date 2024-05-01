@@ -118,6 +118,7 @@ In case of TypeScript projets, it's necessary to declare a custom module:
 ```
 
 ### Releases Notes
+- 0.1.0 : Fix bugs and preparation of npm package
 - 0.0.7 : Fix bugs
 - 0.0.6 : Fix bugs
 - 0.0.5 : Improve Button style, fix button css, text

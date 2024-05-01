@@ -12,7 +12,7 @@ export const Icon = createComponent({
 const IconSection = () => {
     return (
         <div className='f-flex f-gap-10' >
-            <Icon name='anchor' />
+            <Icon name='anchor' className='f-color-red' />
             <Icon name='facebook' />
             <Icon name='linkedin' />
         </div>

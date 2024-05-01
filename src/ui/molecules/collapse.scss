@@ -17,13 +17,11 @@
     
     .#{$prefix}collapse-body-hide {
         @extend .#{$prefix}none;
-        @extend .#{$prefix}width-full;
         padding: var(--space-16);
     }
     
     .#{$prefix}collapse-body-show {
         @extend .#{$prefix}block;
-        @extend .#{$prefix}width-full;
     
         background-color: var(--white);
         padding: var(--space-16);
