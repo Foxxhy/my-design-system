@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createComponent } from '@lit/react';
 // import { FToggle } from '../../../../index';
-import { FToggle } from '../../../ui/components/toggle/docs/toggle';
+import { FToggle } from '../../../../packages/components/toggle/docs/toggle';
 
 export const Toggle = createComponent({
     react: React,

@@ -2,10 +2,11 @@
   "name": "foxxhy-my-design-system",
   "private": false,
   "author": "Foxxhy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "dev:ds": "sass --watch main.scss:styles.css & cd src/client && npm run dev",
+    "ds:dev": "sass --watch main.scss:styles.css & cd apps/playground && npm run dev",
+    "ds:build": "sass --style=compressed main.scss styles.css & cd apps/validator && npm run dev",
     "dev:icon": "cd src/ui/components/icons && npm run dev",
     "dev:toggle": "cd src/ui/components/toggle && npm run dev",
     "validation:ds": "cd src/server && npm run dev",

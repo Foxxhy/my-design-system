@@ -7,20 +7,20 @@
     background-color: $background-color;
 
     padding: var(--space-8);
-    border-radius: var(--space-4);
+    border-radius: var(--space-6);
 }
 
-@mixin base-badge-outline($border-color) {
+@mixin base-badge-outline($color) {
     display: inline-block;
     font-family: var(--font-secondary);
     font-size: var(--text-size-s);
 
-    color: var(--dark);
-    border: 1px solid $border-color;
+    color: $color;
+    border: 1px solid $color;
     background-color: var(--white);
 
     padding: var(--space-8);
-    border-radius: var(--space-4);
+    border-radius: var(--space-6);
 }
 
 @mixin prefix-badges {
